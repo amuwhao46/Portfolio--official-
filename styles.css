@@ -1,0 +1,6 @@
+/*Parallax effect for background*/
+.parallax {
+    background-image: url(images/Background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
