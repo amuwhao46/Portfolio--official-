@@ -28,6 +28,12 @@
             <h1 class="text-3xl font-bold pt-10">Wayne State University</h1>
             <!--About Me-->
             <p class="mb-20">Bachelor of Science in Computer Science</p>
+            <div id="Tab_maker"></div> <!--Look here!-->
+            <script>
+              const domContainer = document.querySelector('#tab_maker');
+              const root = ReactDOM.createRoot(domContainer);
+              root.render(e(tabButton));
+            </script>
             <p class="text-3xl font-bold mb-5">Me!</p>
             <p class="mb-20 px-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa orci nunc odio cras quisque. 
               Proin suspendisse dignissim elementum etiam. Ipsum ullamcorper ultricies purus sit habitant. 
@@ -65,58 +71,42 @@
               <div class="grid grid-cols-2 md:grid-cols-4 gap-6 pt-10">
                 <!--C++-->
                 <div>
-                  <div class="w-20 h-20 rounded-full mx-auto bg-white">
-                    <img class="mx-auto" src="images/C++.svg" alt="C++" width="50">
-                  </div>
+                  <img class="rounded-full bg-white mx-auto" src="images/C++.svg" alt="C++" width="80">
                   <p class="pt-2 text-lg">C++</p>
                 </div>
                 <!--HTML-->
                 <div>
-                  <div class="w-20 h-20 rounded-full mx-auto bg-white">
-                    <img class="mx-auto" src="images/Html 5.svg" alt="C++" width="50">
-                  </div>
+                  <img class="rounded-full bg-white mx-auto" src="images/Html 5.svg" alt="C++" width="80">
                   <p class="pt-2 text-lg">HTML</p>
                 </div>
                 <!--Python-->
                 <div>
-                  <div class="w-20 h-20 rounded-full mx-auto bg-white">
-                    <img class="mx-auto" src="images/Python.svg" alt="C++" width="50">
-                  </div>
+                  <img class="rounded-full bg-white mx-auto" src="images/Python.svg" alt="C++" width="80">
                   <p class="pt-2 text-lg">Python</p>
                 </div>
                 <!--Java-->
                 <div>
-                  <div class="w-20 h-20 rounded-full mx-auto bg-white">
-                    <img class="mx-auto" src="images/Java.svg" alt="C++" width="50">
-                  </div>
+                  <img class="rounded-full bg-white mx-auto" src="images/Java.svg" alt="C++" width="80">
                   <p class="pt-2 text-lg">Java</p>
                 </div>
                 <!--Github-->
                 <div>
-                  <div class="w-20 h-20 rounded-full mx-auto bg-white">
-                    <img class="mx-auto" src="images/GitHub.svg" alt="C++" width="50">
-                  </div>
+                  <img class="rounded-full bg-white mx-auto" src="images/GitHub.svg" alt="C++" width="80">
                   <p class="pt-2 text-lg">Github</p>
                 </div>
                 <!--Figma-->
                 <div>
-                  <div class="w-20 h-20 rounded-full mx-auto bg-white">
-                    <img class="mx-auto" src="images/Figma.svg" alt="C++" width="50">
-                  </div>
+                  <img class="rounded-full bg-white mx-auto" src="images/Figma.svg" alt="C++" width="80">
                   <p class="pt-2 text-lg">Figma</p>
                 </div>
                 <!--Tailwind-->
                 <div>
-                  <div class="w-20 h-20 rounded-full mx-auto bg-white">
-                    <img class="mx-auto" src="images/Tailwind.png" alt="C++" width="50">
-                  </div>
-                  <p class="pt-2 text-lg">tailwindcss</p>
+                  <img class="rounded-full bg-white mx-auto" src="images/Tailwind.png" alt="C++" width="80">
+                  <p class="pt-2 text-lg">Tailwind</p>
                 </div>
                 <!--React-->
                 <div>
-                  <div class="w-20 h-20 rounded-full mx-auto bg-white">
-                    <img class="mx-auto" src="images/React.svg" alt="C++" width="50">
-                  </div>
+                  <img class="rounded-full bg-white mx-auto" src="images/React.svg" alt="C++" width="80">
                   <p class="pt-2 text-lg">React JS</p>
                 </div>
               </div>
@@ -188,6 +178,7 @@
     <!--React stuff-->
     <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
     <script src="https://unpkg.com/react-tabs/dist/react-tabs.development.js"></script>
   </body>
 </html>
