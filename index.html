@@ -53,6 +53,7 @@
             <h1 class="text-3xl font-bold pt-10">Wayne State University</h1>
             <!--About Me-->
             <p class="mb-20">Bachelor of Science in Computer Science</p>
+            <!--React stuff-->
             <div id="Tab_maker"></div> <!--Look here!-->
             <script>
               const domContainer = document.querySelector('#tab_maker');
@@ -60,7 +61,15 @@
               root.render(e(tabButton));
             </script>
             <!--About me Tabs-->
+            <!--Links-->
+            <div class="tabs">
+              <button class="tablinks" class="text-green" onclick="aboutSec(event, 'Me!')">Me!</button>
+              <button class="tablinks" onclick="aboutSec(event, 'Hobbies')">Hobbies</button>
+              <button class="tablinks" onclick="aboutSec(event, 'Interests')">Interests</button>
+            </div>
+            <!--Content-->
             <p class="text-3xl font-bold mb-5">Me!</p>
+            <div id="Me!" class="tabcontent"></div>
             <p class="mb-20 px-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa orci nunc odio cras quisque. 
               Proin suspendisse dignissim elementum etiam. Ipsum ullamcorper ultricies purus sit habitant. 
               Auctor sagittis, facilisis molestie turpis. Erat velit sapien arcu at ultricies hendrerit. 
@@ -71,6 +80,7 @@
               Placerat quis eros, lectus nisi, orci. Scelerisque ac nam iaculis.
             </p>
             <p class="text-3xl font-bold mb-5">Hobbies</p>
+            <div id="Hobbies" class="tabcontent"></div>
             <p class="mb-20 px-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa orci nunc odio cras quisque. 
               Proin suspendisse dignissim elementum etiam. Ipsum ullamcorper ultricies purus sit habitant. 
               Auctor sagittis, facilisis molestie turpis. Erat velit sapien arcu at ultricies hendrerit. 
@@ -81,6 +91,7 @@
               Placerat quis eros, lectus nisi, orci. Scelerisque ac nam iaculis.
             </p>
             <p class="text-3xl font-bold mb-5">Interests</p>
+            <div id="Interests" class="tabcontent"></div>
             <p class="mb-20 px-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa orci nunc odio cras quisque. 
               Proin suspendisse dignissim elementum etiam. Ipsum ullamcorper ultricies purus sit habitant. 
               Auctor sagittis, facilisis molestie turpis. Erat velit sapien arcu at ultricies hendrerit. 
