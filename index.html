@@ -9,6 +9,31 @@
   </head>
   <header>
   <!--Navbar-->
+    <!--<ul>
+      <div class="navBar">
+        <img class="mx-auto" src="images/Logo.svg" alt="Logo" width="20">
+        <h1> 
+            Oke Amuwha
+        </h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="column.html">ARTICLES</a>
+                </li>
+                <li>
+                    <a href="about.html">ABOUT</a>
+                </li>
+                <li>
+                <a href="contact.html">FEEDBACK</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    </ul>-->
+
   </header>
   <!--Main-->
   <body class="parallax">
@@ -34,6 +59,7 @@
               const root = ReactDOM.createRoot(domContainer);
               root.render(e(tabButton));
             </script>
+            <!--About me Tabs-->
             <p class="text-3xl font-bold mb-5">Me!</p>
             <p class="mb-20 px-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa orci nunc odio cras quisque. 
               Proin suspendisse dignissim elementum etiam. Ipsum ullamcorper ultricies purus sit habitant. 
@@ -70,7 +96,7 @@
               <h1 class="text-3xl font-bold">Skills</h1>
               <div class="grid grid-cols-2 md:grid-cols-4 gap-6 pt-10">
                 <!--C++-->
-                <div>
+                <div class="hover:text-green-300">
                   <img class="rounded-full mx-auto" src="images/C++.svg" alt="C++" width="80">
                   <p class="pt-2 text-lg">C++</p>
                 </div>
@@ -199,6 +225,5 @@
     <!--React stuff-->
     <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-tabs/dist/react-tabs.development.js"></script>
   </body>
 </html>
