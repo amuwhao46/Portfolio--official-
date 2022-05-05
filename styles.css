@@ -39,6 +39,7 @@ padding: 10px;
 .navBar li a:hover {
     color: rgb(162, 177, 177);
 }
+
 /*Tabs*/
 .tabs {
     overflow: hidden;
@@ -47,23 +48,15 @@ padding: 10px;
 
 .tabs button {
     background-color: inherit;
-    border: none;
-    outline: none;
     cursor: pointer;
-    padding: 14px 16px;
     transition: 0.3s;
 }
 .tabs button:hover {
     color: rgb(134, 239, 172);
-  }
+}
   
-/* Create an active/current tablink class */
+/* Active tab*/
 .tabs button.active {
     color: rgb(22, 163, 74);
-  }
+}
   
-/* Style the tab content */
-.tabcontent {
-    display: none;
-    padding: 6px 12px;
-  }
