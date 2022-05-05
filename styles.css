@@ -54,12 +54,12 @@ padding: 10px;
     transition: 0.3s;
 }
 .tabs button:hover {
-    color: green;
+    color: rgb(134, 239, 172);
   }
   
 /* Create an active/current tablink class */
 .tabs button.active {
-    color: green;
+    color: rgb(22, 163, 74);
   }
   
 /* Style the tab content */
