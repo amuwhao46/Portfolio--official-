@@ -35,7 +35,7 @@
         if (currentScrollPos > 400) {
           document.getElementById("navbar").style.top = "0";
         } else {
-          document.getElementById("navbar").style.top = "-300px";
+          document.getElementById("navbar").style.top = "-100px";
         }
       }
       
@@ -48,11 +48,15 @@
         })
       })
 
-      /*Fade in/out*/
+      /*Fade in/out
       const observer = new IntersectionObserver(entries => {
-
+        entries.forEach(entry => {
+          if entry.isIntersecting() {
+            document.querySelectorAll(".animated")[0].classList.add(fadeIn); 
+          }
+        })
       })
-      observer.observe(document.getElementById("navbar"));
+      observer.observe(document.getElementById("navbar"));*/
     </script>
   </header>
   <!--Main-->
@@ -254,7 +258,7 @@
             <footer>
               <div class="p-4 mb-5">
                 <h1 class="text-3xl font-bold">Socials</h1>
-                <div class="flex flex-grow mx-auto">
+                <div class="">
                   <div>
                     <div class="w-10 h-10 rounded-full bg-gray-300 p-15 mx-auto"></div>
                     <p class="pt-2 text-sm">LinkedIn</p>
@@ -265,7 +269,7 @@
                   </div>
                   <div>
                     <div class="w-10 h-10 rounded-full bg-gray-300 p-15 mx-auto"></div>
-                    <p class="pt-2 text-sm">Thing</p>
+                    <p class="pt-2 text-sm">Github</p>
                   </div>
                 </div>
               </div>
