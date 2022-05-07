@@ -1,6 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
 /*Parallax effect for background*/
 .parallax {
     background-image: url(images/Background.png);
