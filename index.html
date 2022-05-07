@@ -8,59 +8,52 @@
     <title>Portfolio</title>
   </head>
   <header>
-  <!--Navbar-->
-    <nav id="navbar" class="fixed inset-x-0 flex flex-center justify-between flex-wrap p-5 md:mx-10 md:mt-5 shadow-xl md:rounded-lg sm:rounded-bl-lg sm:rounded-br-lg">
-      <div class="flex items-center flex-shrink-0 text-green-600 mr-6">
-        <img class="fill-current h-8 w-8 mr-2" src="images/Logo.svg" alt="Logo" width="20">
-        <span class="font-bold text-2xl tracking-tight">Oke Amuwha</span>
-      </div>
-      <div id="hamburger" class="block md:hidden">
-        <button class="flex items-center px-3 py-2 border border-black rounded hover:text-green-300 hover:border-green-300">
-          <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
-        </button>
-      </div>
-      <div id="content" class="w-full hidden md:flex md:items-center md:w-auto">
-        <div class="text-sm md:flex-grow">
-          <a href="#school" class="block mt-4 md:inline-block md:mt-0 hover:text-green-300 mr-4">About</a>
-          <a href="#skills" class="block mt-4 md:inline-block md:mt-0 hover:text-green-300 mr-4">Skills</a>
-          <a href="#projects" class="block mt-4 md:inline-block md:mt-0 hover:text-green-300 mr-4">Projects</a>
-          <a href="#experience" class="block mt-4 md:inline-block md:mt-0 hover:text-green-300 mr-4">Experience</a>
+      <!--Navbar-->
+      <nav id="navbar" class="fixed inset-x-0 flex flex-center justify-between flex-wrap p-5 md:mx-10 md:mt-5 shadow-xl md:rounded-lg sm:rounded-bl-lg sm:rounded-br-lg">
+        <a href="#">
+          <div class="flex items-center flex-shrink-0 text-green-600 mr-6">
+            <img class="fill-current h-8 w-8 mr-2" src="images/Logo.svg" alt="Logo" width="20">
+            <span class="font-bold text-2xl tracking-tight">Oke Amuwha</span>
+          </div>
+      </a>
+        <div id="hamburger" class="block md:hidden">
+          <button class="flex items-center px-3 py-2 border border-black rounded hover:text-green-300 hover:border-green-300">
+            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+          </button>
         </div>
-        <div>
-          <a href="#" class="inline-block text-sm px-4 py-2 leading-none border rounded text-green-600 border-green-600 hover:border-transparent hover:text-green-300 hover:bg-green-600 mt-4 lg:mt-0">Resume</a>
+        <div id="content" class="w-full hidden md:flex md:items-center md:w-auto">
+          <div class="text-sm md:flex-grow">
+            <a href="#school" class="block mt-4 md:inline-block md:mt-0 hover:text-green-300 mr-4">About</a>
+            <a href="#skills" class="block mt-4 md:inline-block md:mt-0 hover:text-green-300 mr-4">Skills</a>
+            <a href="#projects" class="block mt-4 md:inline-block md:mt-0 hover:text-green-300 mr-4">Projects</a>
+            <a href="#experience" class="block mt-4 md:inline-block md:mt-0 hover:text-green-300 mr-4">Experience</a>
+          </div>
+          <div>
+            <a href="#" class="inline-block text-sm px-4 py-2 leading-none border rounded text-green-600 border-green-600 hover:border-transparent hover:text-green-300 hover:bg-green-600 mt-4 lg:mt-0">Resume</a>
+          </div>
         </div>
-      </div>
-    </nav>
-    <script>
-      /*Show navbar on scroll*/
-      window.onscroll = function() {
-        let currentScrollPos = window.pageYOffset;
-        if (currentScrollPos > 400) {
-          document.getElementById("navbar").style.top = "0";
-        } else {
-          document.getElementById("navbar").style.top = "-100px";
-        }
-      }
-      
-      /*Show/hide navigation systems*/
-      document.addEventListener('DOMContentLoaded', function() {
-      let menu = document.getElementById('content');
+      </nav>
+      <script>
+        /*Show navbar on scroll*/
+        window.onscroll = function() {scrollFunction()};
 
-      document.getElementById('hamburger').addEventListener('click', event => {
-        menu.classList.toggle('hidden')
-        })
-      })
-
-      /*Fade in/out
-      const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-          if entry.isIntersecting() {
-            document.querySelectorAll(".fade").classList.add(fadeIn); 
+        function scrollFunction() {
+          if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+            document.getElementById("navbar").style.top = "0";
+          } else {
+            document.getElementById("navbar").style.top = "-150px";
           }
+        }
+        
+        /*Show/hide navigation systems*/
+        document.addEventListener('DOMContentLoaded', function() {
+        let menu = document.getElementById('content');
+  
+        document.getElementById('hamburger').addEventListener('click', event => {
+          menu.classList.toggle('hidden')
+          })
         })
-      })
-      observer.observe(document.getElementById("navbar"));*/
-    </script>
+      </script>
   </header>
   <!--Main-->
   <body class="parallax">
