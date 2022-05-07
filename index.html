@@ -7,7 +7,10 @@
     <meta charset="UTF-8">
     <title>Portfolio</title>
   </head>
-  <header>
+
+  <!--Body-->
+  <body class="parallax">
+    <header>
       <!--Navbar-->
       <nav id="navbar" class="fixed inset-x-0 flex flex-center justify-between flex-wrap p-5 md:mx-10 md:mt-5 shadow-xl md:rounded-lg sm:rounded-bl-lg sm:rounded-br-lg">
         <a href="#">
@@ -15,7 +18,7 @@
             <img class="fill-current h-8 w-8 mr-2" src="images/Logo.svg" alt="Logo" width="20">
             <span class="font-bold text-2xl tracking-tight">Oke Amuwha</span>
           </div>
-      </a>
+        </a>
         <div id="hamburger" class="block md:hidden">
           <button class="flex items-center px-3 py-2 border border-black rounded hover:text-green-300 hover:border-green-300">
             <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
@@ -33,30 +36,9 @@
           </div>
         </div>
       </nav>
-      <script>
-        /*Show navbar on scroll*/
-        window.onscroll = function() {scrollFunction()};
 
-        function scrollFunction() {
-          if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
-            document.getElementById("navbar").style.top = "0";
-          } else {
-            document.getElementById("navbar").style.top = "-150px";
-          }
-        }
-        
-        /*Show/hide navigation systems*/
-        document.addEventListener('DOMContentLoaded', function() {
-        let menu = document.getElementById('content');
-  
-        document.getElementById('hamburger').addEventListener('click', event => {
-          menu.classList.toggle('hidden')
-          })
-        })
-      </script>
-  </header>
-  <!--Main-->
-  <body class="parallax">
+    </header>
+    <!--Main-->
     <main class="pt-20">
       <div class="flex flex-col">
         <!--Cover-->
@@ -90,7 +72,10 @@
             <!--Content-->
             <!--<p class="text-3xl font-bold mb-5">Me!</p>-->
             <div id="About" class="tabcontent">
-              <p class="mb-20 px-10">1
+              <p class="mb-20 px-10">Hello! My name is Oke-Oghene Amuwha, but I normally go by Oke Amuwha. 
+                I was born in Nigeria and moved to the United States in 2004. Currently I am a student at Wayne State University pursuing 
+                my bachelors in Computer Science. After I graduate I hope to work in software developement or use my skills in programming to 
+                help develope products that focus on audio.
               </p>
             </div>
             <!--<p class="text-3xl font-bold mb-5">Hobbies</p>-->
@@ -100,26 +85,16 @@
             </div>
             <!--<p class="text-3xl font-bold mb-5">Interests</p>-->
             <div id="Interests" class="tabcontent">
-              <p class="mb-20 px-10">3
+              <p class="mb-20 px-10">I've always had an interest for how stuff works and how it all connects.
+                When I was younger I would always look up at the stars in amazement at whats out there. Constantly
+                learning about deep space and the mysteries thats out there. Nowawdays that sense of wonder has come rocketing 
+                home. I'm more focused on the mind and it's interpretation of reality and the parallels it has with the technology
+                we interface with. How is it that a certain vibration of particles makes the mind interpret it as music?
+                Likewise, how does tapping a certain part of my phone display cause the flashlight to light up?
+                I believe we will have, at the very least, the beginnings of an understanding of the hard problem of consciousness in my lifetime.
+                And I most definitely want to be a part of that discovery.
               </p>
             </div>
-            <!--Javascript-->
-            <script>
-              function aboutSec(evt, tabType) {
-                let i, tabcontent, tablinks;
-                tabcontent = document.getElementsByClassName("tabcontent");
-                for (i = 0; i < tabcontent.length; i++) {
-                  tabcontent[i].style.display = "none";
-                }
-                tablinks = document.getElementsByClassName("tablinks");
-                for (i = 0; i < tablinks.length; i++) {
-                  tablinks[i].className = tablinks[i].className.replace(" active", "");
-                }
-                document.getElementById(tabType).style.display = "block";
-                evt.currentTarget.className += " active";
-              }
-              document.getElementById("default").click(); /*Opens by default*/
-              </script>
 
             <!--Skills-->
             <div class="bg-blue-600 text-white rounded-xl p-10">
@@ -227,7 +202,6 @@
                 </div>
               </div>
             </div>
-
             <!--Footer-->
             <footer>
               <div class="p-4 mb-5">
@@ -262,5 +236,44 @@
     <!--React stuff-->
     <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <!--Javascript Navbar-->
+    <script>
+      /*Show navbar on scroll*/
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+          document.getElementById("navbar").style.top = "0";
+        } else {
+          document.getElementById("navbar").style.top = "-300px";
+        }
+      }
+      
+      /*Show/hide navigation systems*/
+      document.addEventListener('DOMContentLoaded', function() {
+      let menu = document.getElementById('content');
+
+      document.getElementById('hamburger').addEventListener('click', event => {
+        menu.classList.toggle('hidden')
+        })
+      })
+    </script>
+    <!--Javascript Tabs-->
+    <script>
+      function aboutSec(evt, tabType) {
+        let i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabType).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      document.getElementById("default").click(); /*Opens by default*/
+      </script>
   </body>
 </html>
