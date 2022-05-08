@@ -10,6 +10,7 @@
 
   <!--Body-->
   <body class="parallax">
+    <!--Header-->
     <header>
       <!--Navbar-->
       <nav id="navbar" class="fixed inset-x-0 flex flex-center justify-between flex-wrap p-5 md:mx-10 md:mt-5 shadow-xl md:rounded-lg sm:rounded-bl-lg sm:rounded-br-lg">
@@ -66,8 +67,8 @@
             <!--Links-->
             <div class="tabs mb-10">
               <button class="tablinks" onclick="aboutSec(event, 'About')" id="default"><p class="text-3xl font-bold p-5">About</p></button>
-              <button class="tablinks" onclick="aboutSec(event, 'Hobbies')"><p class="text-3xl font-bold p-5">Hobbies</p></button>
               <button class="tablinks" onclick="aboutSec(event, 'Interests')"><p class="text-3xl font-bold p-5">Interests</p></button>
+              <button class="tablinks" onclick="aboutSec(event, 'Hobbies')"><p class="text-3xl font-bold p-5">Hobbies</p></button>
             </div>
             <!--Content-->
             <!--<p class="text-3xl font-bold mb-5">Me!</p>-->
@@ -76,11 +77,6 @@
                 I was born in Nigeria and moved to the United States in 2004. Currently I am a student at Wayne State University pursuing 
                 my bachelors in Computer Science. After I graduate I hope to work in software developement or use my skills in programming to 
                 help develope products that focus on audio.
-              </p>
-            </div>
-            <!--<p class="text-3xl font-bold mb-5">Hobbies</p>-->
-            <div id="Hobbies" class="tabcontent">
-              <p class="mb-20 px-10">2
               </p>
             </div>
             <!--<p class="text-3xl font-bold mb-5">Interests</p>-->
@@ -95,7 +91,11 @@
                 And I most definitely want to be a part of that discovery.
               </p>
             </div>
-
+            <!--<p class="text-3xl font-bold mb-5">Hobbies</p>-->
+            <div id="Hobbies" class="tabcontent">
+              <p class="mb-20 px-10">3
+              </p>
+            </div>
             <!--Skills-->
             <div class="bg-blue-600 text-white rounded-xl p-10">
               <h1 id="skills" class="text-3xl font-bold">Skills</h1>
@@ -258,7 +258,7 @@
         })
       })
     </script>
-    <!--Javascript Tabs-->
+    <!--Javascript About Tabs-->
     <script>
       function aboutSec(evt, tabType) {
         let i, tabcontent, tablinks;
