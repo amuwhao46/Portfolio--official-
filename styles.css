@@ -14,7 +14,7 @@ html {
 }
 /*Navbar*/
 nav {
-    top: -300px;
+    top: -150px;
     background-color: #efefef88;
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
@@ -37,6 +37,6 @@ nav {
   
 /* Active tab*/
 .tabs button.active {
-    color: rgb(22, 163, 74);
+    color: rgb(48, 148, 106);
 }
   
