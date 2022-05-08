@@ -64,7 +64,6 @@
               <button class="tablinks" onclick="aboutSec(event, 'Hobbies')"><p class="text-3xl font-bold p-5">Hobbies</p></button>
             </div>
             <!--Content-->
-            <!--<p class="text-3xl font-bold mb-5">Me!</p>-->
             <div id="About" class="tabcontent">
               <p class="mb-20 px-10">Hello! My name is Oke-Oghene Amuwha, but I normally go by Oke Amuwha. 
                 I was born in Nigeria and moved to the United States in 2004. Currently I am a student at Wayne State University pursuing 
@@ -72,7 +71,6 @@
                 or front end development.
               </p>
             </div>
-            <!--<p class="text-3xl font-bold mb-5">Interests</p>-->
             <div id="Interests" class="tabcontent">
               <p class="mb-20 px-10">I've always had an interest in how and why stuff just seems to work.
                 When I was younger I would always look up at the stars in amazement at whats out there. Constantly
@@ -86,7 +84,6 @@
                 delicate balance it all just works.
               </p>
             </div>
-            <!--<p class="text-3xl font-bold mb-5">Hobbies</p>-->
             <div id="Hobbies" class="tabcontent">
               <p class="mb-20 px-10">When I get an idea to do something, I start it immediately; The research, planning and developing
                 Sometimes in the midst of that excitement I end up taking a lot longer to finish the project or focusing on something else
@@ -155,7 +152,7 @@
                 <!---->
                 <!---->
                 <!--Playlist cover-->
-                <div>
+                <div class="tabs2">
                   <button class="tablinks2" onclick="projectSec(event, 'covers')">
                     <div class="hover:text-green-300">
                       <img class="rounded-full mx-auto" src="images/Cover.png" alt="Playlist Cover img" width="150">
@@ -165,7 +162,7 @@
                 </div>
 
                 <!--Music Player-->
-                <div>
+                <div class="tabs2">
                   <button class="tablinks2" onclick="projectSec(event, 'mPlayer')">
                     <div class="hover:text-green-300">
                       <img class="rounded-full mx-auto" src="images/Music.png" alt="Music mock up" width="150">
@@ -175,8 +172,8 @@
                 </div>
 
                 <!--Portfolio-->
-                <div>
-                  <button class="tablinks2" onclick="projectSec(event, 'mPlayer')">
+                <div class="tabs2">
+                  <button class="tablinks2" onclick="projectSec(event, 'portfolio')">
                     <div class="hover:text-green-300">
                       <img class="rounded-full mx-auto" src="images/Portfolio.png" alt="Portfolio storyboard" width="150">
                       <p class="pt-2 text-lg">Portfolio</p>
@@ -184,24 +181,61 @@
                   </button>
                 </div>
 
+                <div id="covers" class="tabcontent2">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis egestas integer eget aliquet nibh. At lectus urna duis convallis convallis tellus id interdum velit. Volutpat maecenas volutpat blandit aliquam etiam. Neque volutpat ac tincidunt vitae. Pellentesque habitant morbi tristique senectus et netus et malesuada fames. Congue mauris rhoncus aenean vel elit. Curabitur vitae nunc sed velit dignissim sodales ut eu sem. Rutrum quisque non tellus orci ac. Nec feugiat in fermentum posuere urna. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Vulputate eu scelerisque felis imperdiet proin fermentum leo. Quis commodo odio aenean sed. Cursus in hac habitasse platea dictumst. Duis at tellus at urna condimentum mattis pellentesque id. In est ante in nibh mauris cursus mattis molestie.</p>
+                </div>
               </div>
               <!--Projects in Code-->
               <p class="p-4 text-2xl mt-5">Code</p>
               <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-10">
-                <div class="hover:text-green-300">
-                  <img class="rounded-full mx-auto" src="images/Life.png" alt="Game of life" width="150">
-                  <p class="pt-2 text-lg">Game of Life</p>
+
+                <!--Game of life-->
+                <div class="tabs2">
+                  <button class="tablinks2" onclick="projectSec(event, 'conway')">
+                    <div class="hover:text-green-300">
+                      <img class="rounded-full mx-auto" src="images/Life.png" alt="Game of life" width="150">
+                      <p class="pt-2 text-lg">Game of Life</p>
+                    </div>
+                  </button>
                 </div>
-                <div class="hover:text-green-300">
-                  <img class="rounded-full mx-auto" src="images/Discord.png" alt="Discord bot" width="150">
-                  <p class="pt-2 text-lg">Discord Bot</p>
+
+                <!--Discord bot-->
+                <div class="tabs2">
+                  <button class="tablinks2" onclick="projectSec(event, 'discordBot')">
+                    <div class="hover:text-green-300">
+                      <img class="rounded-full mx-auto" src="images/Discord.png" alt="Discord bot" width="150">
+                      <p class="pt-2 text-lg">Discord Bot</p>
+                    </div>
+                  </button>
                 </div>
-                <div class="hover:text-green-300">
-                  <img class="rounded-full mx-auto" src="images/Settings.jpeg" alt="Settings page" width="150">
-                  <p class="pt-2 text-lg">Postogon Settings Page</p>
+
+                <!--Postogon-->
+                <div class="tabs2">
+                  <button class="tablinks2" onclick="projectSec(event, 'postogonSet')">
+                    <div class="hover:text-green-300">
+                      <img class="rounded-full mx-auto" src="images/Settings.jpeg" alt="Settings page" width="150">
+                      <p class="pt-2 text-lg">Postogon Settings Page</p>
+                    </div>
+                  </button>
                 </div>
               </div>
             </div>
+
+            <script>
+              function projectSec(evt, tabType) {
+                let i, tabcontent2, tablinks2;
+                tabcontent2 = document.getElementsByClassName("tabcontent2");
+                for (i = 0; i < tabcontent2.length; i++) {
+                  tabcontent2[i].style.display = "none";
+                }
+                tablinks2 = document.getElementsByClassName("tablinks2");
+                for (i = 0; i < tablinks2.length; i++) {
+                  tablinks2[i].className = tablinks2[i].className.replace(" active", "");
+                }
+                document.getElementById(tabType).style.display = "block";
+                evt.currentTarget.className += " active";
+              }
+            </script>
 
             <!--Work Experience-->
             <div class="bg-blue-600 text-white rounded-lg p-10">
