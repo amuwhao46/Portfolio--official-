@@ -56,13 +56,6 @@
             <h1 class="text-3xl font-bold pt-10">Wayne State University</h1>
             <!--About Me-->
             <p class="mb-10">Bachelor of Science in Computer Science</p>
-            <!--React stuff-->
-            <div id="Tab_maker"></div> <!--Look here!-->
-            <!--<script>
-              const domContainer = document.querySelector('#tab_maker');
-              const root = ReactDOM.createRoot(domContainer);
-              root.render(e(tabButton));
-            </script>-->
             <!--About me Tabs-->
             <!--Links-->
             <div class="tabs mb-10">
@@ -156,18 +149,41 @@
               <!--Projects in figma-->
               <p class="p-4 text-2xl">Design</p>
               <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-10">
-                <div class="hover:text-green-300">
-                  <img class="rounded-full mx-auto" src="images/Cover.png" alt="Playlist Cover img" width="150">
-                  <p class="pt-2 text-lg">Playlist Covers</p>
+                <!---->
+                <!---->
+                <!--WIP-->
+                <!---->
+                <!---->
+                <!--Playlist cover-->
+                <div>
+                  <button class="tablinks2" onclick="projectSec(event, 'covers')">
+                    <div class="hover:text-green-300">
+                      <img class="rounded-full mx-auto" src="images/Cover.png" alt="Playlist Cover img" width="150">
+                      <p class="pt-2 text-lg">Playlist Covers</p>
+                    </div>
+                  </button>
                 </div>
-                <div class="hover:text-green-300">
-                  <img class="rounded-full mx-auto" src="images/Music.png" alt="Music mock up" width="150">
-                  <p class="pt-2 text-lg">Music player</p>
+
+                <!--Music Player-->
+                <div>
+                  <button class="tablinks2" onclick="projectSec(event, 'mPlayer')">
+                    <div class="hover:text-green-300">
+                      <img class="rounded-full mx-auto" src="images/Music.png" alt="Music mock up" width="150">
+                      <p class="pt-2 text-lg">Music player</p>
+                    </div>
+                  </button>
                 </div>
-                <div class="hover:text-green-300">
-                  <img class="rounded-full mx-auto" src="images/Portfolio.png" alt="Portfolio storyboard" width="150">
-                  <p class="pt-2 text-lg">Portfolio</p>
+
+                <!--Portfolio-->
+                <div>
+                  <button class="tablinks2" onclick="projectSec(event, 'mPlayer')">
+                    <div class="hover:text-green-300">
+                      <img class="rounded-full mx-auto" src="images/Portfolio.png" alt="Portfolio storyboard" width="150">
+                      <p class="pt-2 text-lg">Portfolio</p>
+                    </div>
+                  </button>
                 </div>
+
               </div>
               <!--Projects in Code-->
               <p class="p-4 text-2xl mt-5">Code</p>
