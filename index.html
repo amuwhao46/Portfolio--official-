@@ -151,8 +151,8 @@
                 <!---->
                 <!---->
                 <!--Playlist cover-->
-                <div class="tabs2">
-                  <button id="default2" class="tablinks2" onclick="projectSec(event, 'covers')">
+                <div class="tabs">
+                  <button id="default2" class="tablinks" onclick="aboutSec(event, 'covers')">
                     <div class="hover:text-green-300">
                       <img class="rounded-full mx-auto" src="images/Cover.png" alt="Playlist Cover img" width="150">
                       <p class="pt-2 text-lg">Playlist Covers</p>
@@ -161,8 +161,8 @@
                 </div>
 
                 <!--Music Player-->
-                <div class="tabs2">
-                  <button class="tablinks2" onclick="projectSec(event, 'mPlayer')">
+                <div class="tabs">
+                  <button class="tablinks" onclick="aboutSec(event, 'mPlayer')">
                     <div class="hover:text-green-300">
                       <img class="rounded-full mx-auto" src="images/Music.png" alt="Music mock up" width="150">
                       <p class="pt-2 text-lg">Music player</p>
@@ -171,8 +171,8 @@
                 </div>
 
                 <!--Portfolio-->
-                <div class="tabs2">
-                  <button class="tablinks2" onclick="projectSec(event, 'portfolio')">
+                <div class="tabs">
+                  <button class="tablinks" onclick="aboutSec(event, 'portfolio')">
                     <div class="hover:text-green-300">
                       <img class="rounded-full mx-auto" src="images/Portfolio.png" alt="Portfolio storyboard" width="150">
                       <p class="pt-2 text-lg">Portfolio</p>
@@ -182,19 +182,19 @@
               </div>
 
               <!--Content-->
-              <div id="covers" class="tabcontent2">
+              <div id="covers" class="tabcontent">
                 <p class="p-10">Used Figma to understand the different frames and componants used in design to create comprehensive looking
                   elements. This is a project I did for fun to make custom spotify playlist covers. 
                 </p>
               </div>
 
-              <div id="mPlayer" class="tabcontent2">
+              <div id="mPlayer" class="tabcontent">
                 <p class="p-10">I used figma and thier prototyping feature to design a rough mock up
                   of a music streaming service. I mainly did this to test out animations and UI design.
                 </p>
               </div>
 
-                <div id="portfolio" class="tabcontent2">
+                <div id="portfolio" class="tabcontent">
                   <p class="p-10">I used figma to design the portfolio you are currently on. 
                     I decided to design the mobile version first because it is easier to scale up to a desktop view.
                     Going from my figma design into the website view, there are some drastic changes because this was mainly 
@@ -207,8 +207,8 @@
               <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-10">
 
                 <!--Game of life-->
-                <div class="tabs2">
-                  <button class="tablinks2" onclick="projectSec(event, 'conway')">
+                <div class="tabs">
+                  <button class="tablinks" onclick="aboutSec(event, 'conway')">
                     <div class="hover:text-green-300">
                       <img class="rounded-full mx-auto" src="images/Life.png" alt="Game of life" width="150">
                       <p class="pt-2 text-lg">Game of Life</p>
@@ -217,8 +217,8 @@
                 </div>
 
                 <!--Discord bot-->
-                <div class="tabs2">
-                  <button class="tablinks2" onclick="projectSec(event, 'discordBot')">
+                <div class="tabs">
+                  <button class="tablinks" onclick="aboutSec(event, 'discordBot')">
                     <div class="hover:text-green-300">
                       <img class="rounded-full mx-auto" src="images/Discord.png" alt="Discord bot" width="150">
                       <p class="pt-2 text-lg">Discord Bot</p>
@@ -227,8 +227,8 @@
                 </div>
 
                 <!--Postogon-->
-                <div class="tabs2">
-                  <button class="tablinks2" onclick="projectSec(event, 'postogonSet')">
+                <div class="tabs">
+                  <button class="tablinks" onclick="aboutSec(event, 'postogonSet')">
                     <div class="hover:text-green-300">
                       <img class="rounded-full border border-black mx-auto" src="images/Settings.jpeg" alt="Settings page" width="150">
                       <p class="pt-2 text-lg">Postogon Settings Page</p>
@@ -238,7 +238,7 @@
               </div>
 
               <!--Content-->
-              <div id="conway" class="tabcontent2">
+              <div id="conway" class="tabcontent">
                 <p class="p-10">
                   <b class="text-red-600">Work In Progress</b>
                 </p>
@@ -249,7 +249,7 @@
                 </p>
               </div>
 
-              <div id="discordBot" class="tabcontent2">
+              <div id="discordBot" class="tabcontent">
                 <p class="p-10">
                   <b class="text-red-600">Work In Progress</b>
                 </p>
@@ -260,7 +260,7 @@
                 </p>
               </div> 
 
-              <div id="postogonSet" class="tabcontent2">
+              <div id="postogonSet" class="tabcontent">
                 <p class="p-10">
                   I was helping my friend and his team build a social media website. What I was tasked on doing
                   was developing the front end of the settings page. With help from him and some other team members 
@@ -365,22 +365,5 @@
       }
       document.getElementById("default").click(); /*Opens by default*/
       </script>
-        <!--Javascript Project Tabs-->
-        <script>
-          function projectSec(evt, tabType) {
-              let i, tabcontent, tablinks;
-              tabcontent = document.getElementsByClassName("tabcontent2");
-              for (i = 0; i < tabcontent.length; i++) {
-              tabcontent[i].style.display = "none";
-              }
-              tablinks = document.getElementsByClassName("tablinks2");
-              for (i = 0; i < tablinks.length; i++) {
-              tablinks[i].className = tablinks[i].className.replace(" active", "");
-              }
-              document.getElementById(tabType).style.display = "block";
-              evt.currentTarget.className += " active";
-          }
-          document.getElementById("default2").click(); /*Opens by default*/
-          </script>
   </body>
 </html>
