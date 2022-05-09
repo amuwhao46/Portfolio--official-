@@ -90,7 +90,6 @@
                 something else that catches my interests. I also like watching educational youtubers like Veritasium or Vsauce
                 The way they're able to explain advanced concepts in an interactive and relatable way reinforces my love for learning.
                 I'm also pretty active, constantly working out my body and mind by going to the gym and <b>(attempting)</b> reading.
-
               </p>
             </div>
             <!--Skills-->
@@ -153,7 +152,7 @@
                 <!---->
                 <!--Playlist cover-->
                 <div class="tabs2">
-                  <button class="tablinks2" onclick="projectSec(event, 'covers')">
+                  <button id="default2" class="tablinks2" onclick="projectSec(event, 'covers')">
                     <div class="hover:text-green-300">
                       <img class="rounded-full mx-auto" src="images/Cover.png" alt="Playlist Cover img" width="150">
                       <p class="pt-2 text-lg">Playlist Covers</p>
@@ -180,11 +179,33 @@
                     </div>
                   </button>
                 </div>
-
-                <div id="covers" class="tabcontent2">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis egestas integer eget aliquet nibh. At lectus urna duis convallis convallis tellus id interdum velit. Volutpat maecenas volutpat blandit aliquam etiam. Neque volutpat ac tincidunt vitae. Pellentesque habitant morbi tristique senectus et netus et malesuada fames. Congue mauris rhoncus aenean vel elit. Curabitur vitae nunc sed velit dignissim sodales ut eu sem. Rutrum quisque non tellus orci ac. Nec feugiat in fermentum posuere urna. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Vulputate eu scelerisque felis imperdiet proin fermentum leo. Quis commodo odio aenean sed. Cursus in hac habitasse platea dictumst. Duis at tellus at urna condimentum mattis pellentesque id. In est ante in nibh mauris cursus mattis molestie.</p>
-                </div>
               </div>
+
+              <!--Content-->
+              <div id="covers" class="tabcontent2">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis egestas integer eget aliquet nibh. At lectus urna duis convallis convallis tellus id interdum velit. 
+                    Volutpat maecenas volutpat blandit aliquam etiam. Neque volutpat ac tincidunt vitae. Pellentesque habitant morbi tristique senectus et netus et malesuada fames. Congue mauris rhoncus aenean vel elit. Curabitur vitae nunc sed velit 
+                    dignissim sodales ut eu sem. Rutrum quisque non tellus orci ac. Nec feugiat in fermentum posuere urna. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Vulputate eu scelerisque felis imperdiet proin fermentum leo.
+                    Quis commodo odio aenean sed. Cursus in hac habitasse platea dictumst. Duis at tellus at urna condimentum mattis pellentesque id. In est ante in nibh mauris cursus mattis molestie.
+                </p>
+              </div>
+
+              <div id="mPlayer" class="tabcontent2">
+                <p class="text-blue-200">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis egestas integer eget aliquet nibh. At lectus urna duis convallis convallis tellus id interdum velit. 
+                    Volutpat maecenas volutpat blandit aliquam etiam. Neque volutpat ac tincidunt vitae. Pellentesque habitant morbi tristique senectus et netus et malesuada fames. Congue mauris rhoncus aenean vel elit. Curabitur vitae nunc sed velit 
+                    dignissim sodales ut eu sem. Rutrum quisque non tellus orci ac. Nec feugiat in fermentum posuere urna. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Vulputate eu scelerisque felis imperdiet proin fermentum leo.
+                    Quis commodo odio aenean sed. Cursus in hac habitasse platea dictumst. Duis at tellus at urna condimentum mattis pellentesque id. In est ante in nibh mauris cursus mattis molestie.
+                </p>
+              </div>
+
+                <div id="portfolio" class="tabcontent2">
+                  <p class="text-yellow-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis egestas integer eget aliquet nibh. At lectus urna duis convallis convallis tellus id interdum velit. 
+                      Volutpat maecenas volutpat blandit aliquam etiam. Neque volutpat ac tincidunt vitae. Pellentesque habitant morbi tristique senectus et netus et malesuada fames. Congue mauris rhoncus aenean vel elit. Curabitur vitae nunc sed velit 
+                      dignissim sodales ut eu sem. Rutrum quisque non tellus orci ac. Nec feugiat in fermentum posuere urna. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Vulputate eu scelerisque felis imperdiet proin fermentum leo.
+                      Quis commodo odio aenean sed. Cursus in hac habitasse platea dictumst. Duis at tellus at urna condimentum mattis pellentesque id. In est ante in nibh mauris cursus mattis molestie.
+                  </p>
+                </div>
+
               <!--Projects in Code-->
               <p class="p-4 text-2xl mt-5">Code</p>
               <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-10">
@@ -219,23 +240,33 @@
                   </button>
                 </div>
               </div>
-            </div>
 
-            <script>
-              function projectSec(evt, tabType) {
-                let i, tabcontent2, tablinks2;
-                tabcontent2 = document.getElementsByClassName("tabcontent2");
-                for (i = 0; i < tabcontent2.length; i++) {
-                  tabcontent2[i].style.display = "none";
-                }
-                tablinks2 = document.getElementsByClassName("tablinks2");
-                for (i = 0; i < tablinks2.length; i++) {
-                  tablinks2[i].className = tablinks2[i].className.replace(" active", "");
-                }
-                document.getElementById(tabType).style.display = "block";
-                evt.currentTarget.className += " active";
-              }
-            </script>
+              <!--Content-->
+              <div id="conway" class="tabcontent2">
+                <p class="text-teal-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis egestas integer eget aliquet nibh. At lectus urna duis convallis convallis tellus id interdum velit. 
+                    Volutpat maecenas volutpat blandit aliquam etiam. Neque volutpat ac tincidunt vitae. Pellentesque habitant morbi tristique senectus et netus et malesuada fames. Congue mauris rhoncus aenean vel elit. Curabitur vitae nunc sed velit 
+                    dignissim sodales ut eu sem. Rutrum quisque non tellus orci ac. Nec feugiat in fermentum posuere urna. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Vulputate eu scelerisque felis imperdiet proin fermentum leo.
+                    Quis commodo odio aenean sed. Cursus in hac habitasse platea dictumst. Duis at tellus at urna condimentum mattis pellentesque id. In est ante in nibh mauris cursus mattis molestie.
+                </p>
+              </div>
+
+              <div id="discordBot" class="tabcontent2">
+                <p class="text-red-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis egestas integer eget aliquet nibh. At lectus urna duis convallis convallis tellus id interdum velit. 
+                    Volutpat maecenas volutpat blandit aliquam etiam. Neque volutpat ac tincidunt vitae. Pellentesque habitant morbi tristique senectus et netus et malesuada fames. Congue mauris rhoncus aenean vel elit. Curabitur vitae nunc sed velit 
+                    dignissim sodales ut eu sem. Rutrum quisque non tellus orci ac. Nec feugiat in fermentum posuere urna. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Vulputate eu scelerisque felis imperdiet proin fermentum leo.
+                    Quis commodo odio aenean sed. Cursus in hac habitasse platea dictumst. Duis at tellus at urna condimentum mattis pellentesque id. In est ante in nibh mauris cursus mattis molestie.
+                </p>
+              </div> 
+
+              <div id="postogonSet" class="tabcontent2">
+                <p class="text-cyan-200">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis egestas integer eget aliquet nibh. At lectus urna duis convallis convallis tellus id interdum velit. 
+                    Volutpat maecenas volutpat blandit aliquam etiam. Neque volutpat ac tincidunt vitae. Pellentesque habitant morbi tristique senectus et netus et malesuada fames. Congue mauris rhoncus aenean vel elit. Curabitur vitae nunc sed velit 
+                    dignissim sodales ut eu sem. Rutrum quisque non tellus orci ac. Nec feugiat in fermentum posuere urna. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Vulputate eu scelerisque felis imperdiet proin fermentum leo.
+                    Quis commodo odio aenean sed. Cursus in hac habitasse platea dictumst. Duis at tellus at urna condimentum mattis pellentesque id. In est ante in nibh mauris cursus mattis molestie.
+                </p>
+              </div>
+
+            </div>
 
             <!--Work Experience-->
             <div class="bg-blue-600 text-white rounded-lg p-10">
@@ -332,5 +363,22 @@
       }
       document.getElementById("default").click(); /*Opens by default*/
       </script>
+        <!--Javascript Project Tabs-->
+        <script>
+          function projectSec(evt, tabType) {
+              let i, tabcontent, tablinks;
+              tabcontent = document.getElementsByClassName("tabcontent2");
+              for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+              }
+              tablinks = document.getElementsByClassName("tablinks2");
+              for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].className = tablinks[i].className.replace(" active", "");
+              }
+              document.getElementById(tabType).style.display = "block";
+              evt.currentTarget.className += " active";
+          }
+          document.getElementById("default2").click(); /*Opens by default*/
+          </script>
   </body>
 </html>
