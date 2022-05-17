@@ -8,9 +8,11 @@ html {
 
 /*Parallax effect for background*/
 .parallax {
-    background-image: url(images/Hexagon.jpg);
+    background-image: url(images/Canal.JPG);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 }
 /*Navbar*/
 nav {
@@ -40,21 +42,7 @@ nav {
     color: rgb(48, 148, 106);
 }
 
-.tabs2 {
-    overflow: hidden;
-    background-color: #ffffff;
-}
-.tabs2 button {
-    background-color: inherit;
-    cursor: pointer;
-    transition: 0.3s;
-}
-.tabs2 button:hover {
-    color: rgb(134, 239, 172);
-}
-  
-/* Active tab*/
-.tabs2 button.active {
-    color: rgb(48, 148, 106);
+.tabHeader {
+    height: 100%;
 }
   
