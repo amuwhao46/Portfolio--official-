@@ -257,9 +257,7 @@
 
             <!--Work Experience-->
             <div class="bg-blue-600 text-white rounded-lg p-10">
-              <h1 id="experience" class="text-3xl font-bold">Work Experience</h1>
               <div id="workTab" class="fullScreen bg-blue-600">
-
                 <!-- Button to close the overlay navigation -->
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <div class="fullscreen-content">
@@ -269,11 +267,11 @@
                   <p>Test text will be to display in overlay tab</p>
                 </div>
               </div>
-
+              <h1 id="experience" class="text-3xl font-bold">Work Experience</h1>
               <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-10">
                 <!--Job tabs (Overlay)-->
                 <!--Allstate-->
-                <button class="tabHeader" onclick="workSecOpen(event, 'allstate')">
+                <button onclick="workSecOpen(event, 'allstate')">
                   <div class="hover:text-green-300">
                     <div>
                       <img class="rounded-full mx-auto" src="images/Allstate.svg" alt="Allstate Logo" width="150">
@@ -397,12 +395,12 @@
         /*Controls Overlay for tabs*/
         /*Opens*/
         function workSecOpen() {
-          document.getElementById("workTab").style.display = "block";
+          document.getElementById("workTab").style.width = "100%";
         }
 
         /*Closes*/
         function closeNav() {
-          document.getElementById("workTab").style.display = "none";
+          document.getElementById("workTab").style.width = "0%";
         }
       </script>
   </body>
