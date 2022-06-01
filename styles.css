@@ -8,11 +8,15 @@ html {
 
 /*Parallax effect for background*/
 .parallax {
-    background-image: url(images/Canal.JPG);
+    background-image: url(images/Hexagon.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+}
+.blur {
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
 }
 /*Navbar*/
 nav {
@@ -45,4 +49,14 @@ nav {
 .tabHeader {
     height: 100%;
 }
+/*More tabs*/
+.fullscreen {
+    overflow: hidden;
+}
+.fullscreen button {
+    background-color: inherit;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
   

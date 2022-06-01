@@ -27,7 +27,7 @@
             <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
           </button>
         </div>
-        <div id="content" class="w-full hidden md:flex md:items-center md:w-auto">
+        <div id="content" class="w-full hidden transition-all ease-in-out md:flex md:items-center md:w-auto">
           <div class="text-sm md:flex-grow">
             <a href="#school" class="block mt-4 md:inline-block md:mt-0 hover:text-green-300 mr-4">About</a>
             <a href="#skills" class="block mt-4 md:inline-block md:mt-0 hover:text-green-300 mr-4">Skills</a>
@@ -261,7 +261,7 @@
               <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-10">
                 <!--Job tabs (Fullscreen)-->
                 <!--Allstate-->
-                <div class="fullScreen">
+                <div class="fullScreen bg-blue-600">
                   <button class="tabHeader" onclick="workSec(event, 'allstate')">
                     <div class="hover:text-green-300">
                       <div>
@@ -273,7 +273,7 @@
                 </div>
 
                 <!--Apple-->
-                <div class="fullScreen">
+                <div class="fullScreen bg-blue-600">
                   <button class="tabHeader" onclick="workSec(event, 'apple')">
                     <div class="hover:text-green-300">
                       <div>
@@ -285,7 +285,7 @@
                 </div>
 
                 <!--Postogon-->
-                <div class="fullScreen">
+                <div class="fullScreen bg-blue-600">
                   <button class="tabHeader" onclick="workSec(event, 'postogon')">
                     <div class="hover:text-green-300">
                       <div class="w-40 h-40 rounded-full bg-white mx-auto">
@@ -354,6 +354,16 @@
         menu.classList.toggle('hidden')
         })
       })
+
+      /*Blur background on scroll
+      $(window).scroll(function(e) {
+
+        let elOffset = $('.parallax').scrollTop() - $(window).scrollTop();
+
+        if(elOffset < 50) {
+          $(this).addClass('blur');
+        }
+      });*/
     </script>
     <!--Javascript Tabs-->
     <script>
