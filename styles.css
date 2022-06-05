@@ -45,47 +45,21 @@ nav {
 .tabs button.active {
     color: rgb(48, 148, 106);
 }
-/*More tabs*/
-.fullscreen {
-    /*overflow: hidden;*/
-    height: 100%;
-    width: 0;
+#overlay {
     position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    background-color: #000000;
-    background-color: #000000aa;
-    overflow-x: hidden;
-    transition: 0.5s;
-}
-.fullscreen-content {
-    position: relative;
-    top: 25%;
+    display: none;
     width: 100%;
-    text-align: center;
-    background-color: #ffffff;
-}
-.fullscreen p {
-    padding: 8px;
-    font-size: 36px;
-    color: #818181;
-    display: block;
-}
-.fullscreen .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-}
-/*
-@media screen and (max-height: 450px) {
-    .fullscreen a {font-size: 20px}
-    .fullscreen .closebtn {
-      font-size: 40px;
-      top: 15px;
-      right: 35px;
-    }
-}*/
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.1);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    z-index: 1;
+    cursor: pointer;
+    transition: 0.3s;
+  }
 
   

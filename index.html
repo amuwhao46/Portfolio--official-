@@ -257,21 +257,12 @@
 
             <!--Work Experience-->
             <div class="bg-blue-600 text-white rounded-lg p-10">
-              <div id="workTab" class="fullScreen bg-blue-600">
-                <!-- Button to close the overlay navigation -->
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <div class="fullscreen-content">
-                  <p>Test text will be to display in overlay tab</p>
-                  <p>Test text will be to display in overlay tab</p>
-                  <p>Test text will be to display in overlay tab</p>
-                  <p>Test text will be to display in overlay tab</p>
-                </div>
-              </div>
               <h1 id="experience" class="text-3xl font-bold">Work Experience</h1>
+              <div id="overlay" onclick="off()"></div>
               <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-10">
                 <!--Job tabs (Overlay)-->
                 <!--Allstate-->
-                <button onclick="workSecOpen(event, 'allstate')">
+                <button onclick="on()">
                   <div class="hover:text-green-300">
                     <div>
                       <img class="rounded-full mx-auto" src="images/Allstate.svg" alt="Allstate Logo" width="150">
@@ -388,19 +379,17 @@
         }
         document.getElementById(tabType).style.display = "block";
         evt.currentTarget.className += " active";
-      }
-      document.getElementById("default").click(); /*Opens by default*/
+        }
+        document.getElementById("default").click(); /*Opens by default*/
       </script>
       <script>
-        /*Controls Overlay for tabs*/
-        /*Opens*/
-        function workSecOpen() {
-          document.getElementById("workTab").style.width = "100%";
+        /*Tab Overlay*/
+        function on() {
+          document.getElementById("overlay").style.display = "block";
         }
 
-        /*Closes*/
-        function closeNav() {
-          document.getElementById("workTab").style.width = "0%";
+        function off() {
+          document.getElementById("overlay").style.display = "none";
         }
       </script>
   </body>
