@@ -61,7 +61,7 @@ nav {
     backdrop-filter: blur(4px);
     z-index: 2;
     cursor: pointer;
-    transition: -webkit-backdrop-filter 2s;
+    transition: 2s;
 }
 #overlay2 {
     position: fixed;
