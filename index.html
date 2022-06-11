@@ -11,31 +11,35 @@
   </head>
 
   <!--Body-->
-  <body class="parallax font-roboto">
+  <body class="parallax">
     <!--Header-->
     <header>
+      <div id="blur-on-scroll">
+        <div class=""></div>
+        <div></div>
+      </div>
       <!--Navbar-->
       <nav id="navbar" class="fixed inset-x-0 flex flex-center justify-between flex-wrap p-5 md:mx-10 md:mt-5 shadow-xl md:rounded-lg rounded-bl-lg rounded-br-lg">
         <a href="#">
-          <div class="flex items-center flex-shrink-0 text-green-600 mr-6">
+          <div class="flex items-center flex-shrink-0 text-blue-600 mr-6">
             <img class="fill-current h-8 w-8 mr-2" src="images/Logo.svg" alt="Logo" width="20">
             <span class="font-bold text-2xl tracking-tight">Oke Amuwha</span>
           </div>
         </a>
         <div id="hamburger" class="block md:hidden">
-          <button class="flex items-center px-3 py-2 border border-black rounded hover:text-green-300 hover:border-green-300">
+          <button class="flex items-center px-3 py-2 border border-black rounded hover:text-blue-400 hover:border-blue-300">
             <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
           </button>
         </div>
         <div id="content" class="w-full hidden transition-all ease-in-out md:flex md:items-center md:w-auto">
           <div class="text-sm md:flex-grow">
-            <a href="#school" class="block mt-4 md:inline-block md:mt-0 hover:text-green-300 mr-4">About</a>
-            <a href="#skills" class="block mt-4 md:inline-block md:mt-0 hover:text-green-300 mr-4">Skills</a>
-            <a href="#projects" class="block mt-4 md:inline-block md:mt-0 hover:text-green-300 mr-4">Projects</a>
-            <a href="#experience" class="block mt-4 md:inline-block md:mt-0 hover:text-green-300 mr-4">Experience</a>
+            <a href="#school" class="block mt-4 md:inline-block md:mt-0 hover:text-blue-400 mr-4">About</a>
+            <a href="#skills" class="block mt-4 md:inline-block md:mt-0 hover:text-blue-400 mr-4">Skills</a>
+            <a href="#projects" class="block mt-4 md:inline-block md:mt-0 hover:text-blue-400 mr-4">Projects</a>
+            <a href="#experience" class="block mt-4 md:inline-block md:mt-0 hover:text-blue-400 mr-4">Experience</a>
           </div>
           <div>
-            <a href="files/Oke-Oghene Amuwha Resume.pdf" target="_blank" class="inline-block text-sm px-4 py-2 leading-none border rounded text-green-600 border-green-600 hover:border-transparent hover:text-green-300 hover:bg-green-600 mt-4 md:mt-0">Resume</a>
+            <a href="files/Oke-Oghene Amuwha Resume.pdf" target="_blank" class="inline-block text-sm px-4 py-2 leading-none border rounded text-blue-600 border-blue-600 hover:border-transparent hover:text-blue-400 hover:bg-blue-600 mt-4 md:mt-0">Resume</a>
           </div>
         </div>
       </nav>
@@ -53,7 +57,7 @@
         <!--School-->
         <div id="school" class="bg-gray-100 rounded-tl-lg rounded-tr-lg">
             <div class="text-center">
-              <div class="bg-white rounded-xl p-10 m-5">
+              <div class="bg-white rounded-xl p-10 m-5 shadow-sm">
               <!--School img-->
               <img class="w-60 h-60 rounded-full border-solid border border-black mx-auto shadow-lg" src="images/School.svg" alt="School glyph" width="300">
               <h1 class="text-3xl font-bold pt-10">Wayne State University</h1>
@@ -97,7 +101,7 @@
             </div>
             <!--Skills-->
             <h1 id="skills" class="text-3xl text-left text-blue-600 font-bold pt-5 ml-10">Skills</h1>
-            <div class="bg-white text-black rounded-xl p-10 m-5">
+            <div class="bg-white text-black rounded-xl p-10 m-5 shadow-sm">
               <div class="grid grid-cols-2 md:grid-cols-4 gap-6 pt-10">
                 <!--C++-->
                 <div class="mb-5">
@@ -143,7 +147,7 @@
             </div>
             <!--Projects-->
             <h1 id="projects" class="text-blue-600 text-3xl text-left font-bold pt-5 ml-10">Projects</h1>
-            <div class="bg-white rounded-xl p-10 m-5">
+            <div class="bg-white rounded-xl p-10 m-5 shadow-sm">
               <div class="mb-10">
                 <!--Projects in figma-->
                 <p class="p-5 text-2xl font-semibold">Figma</p>
@@ -151,7 +155,7 @@
                   <!--Playlist cover-->
                   <div class="tabs">
                     <button id="default2" class="tablinks" onclick="aboutSec(event, 'covers')">
-                      <div class="hover:text-green-300">
+                      <div class="hover:text-blue-400">
                         <img class="rounded-full mx-auto" src="images/Cover.png" alt="Playlist Cover img" width="150">
                         <p class="pt-2 text-lg">Playlist Covers</p>
                       </div>
@@ -160,7 +164,7 @@
                   <!--Music Player-->
                   <div class="tabs">
                     <button class="tablinks" onclick="aboutSec(event, 'mPlayer')">
-                      <div class="hover:text-green-300">
+                      <div class="hover:text-blue-400">
                         <img class="rounded-full mx-auto" src="images/Music.png" alt="Music mock up" width="150">
                         <p class="pt-2 text-lg">Music player</p>
                       </div>
@@ -169,7 +173,7 @@
                   <!--Portfolio-->
                   <div class="tabs mb-5">
                     <button class="tablinks" onclick="aboutSec(event, 'portfolio')">
-                      <div class="hover:text-green-300">
+                      <div class="hover:text-blue-400">
                         <img class="rounded-full mx-auto" src="images/Portfolio.png" alt="Portfolio storyboard" width="150">
                         <p class="pt-2 text-lg">Portfolio</p>
                       </div>
@@ -203,7 +207,7 @@
                   <!--Game of life-->
                   <div class="tabs">
                     <button class="tablinks" onclick="aboutSec(event, 'conway')">
-                      <div class="hover:text-green-300">
+                      <div class="hover:text-blue-400">
                         <img class="rounded-full mx-auto" src="images/Life.png" alt="Game of life" width="150">
                         <p class="pt-2 text-lg">Game of Life</p>
                       </div>
@@ -212,7 +216,7 @@
                   <!--Discord bot-->
                   <div class="tabs">
                     <button class="tablinks" onclick="aboutSec(event, 'discordBot')">
-                      <div class="hover:text-green-300">
+                      <div class="hover:text-blue-400">
                         <img class="rounded-full mx-auto" src="images/Discord.png" alt="Discord bot" width="150">
                         <p class="pt-2 text-lg">Discord Bot</p>
                       </div>
@@ -221,7 +225,7 @@
                   <!--Postogon-->
                   <div class="tabs mb-5">
                     <button class="tablinks" onclick="aboutSec(event, 'postogonSet')">
-                      <div class="hover:text-green-300">
+                      <div class="hover:text-blue-400">
                         <img class="rounded-full border border-black mx-auto" src="images/Settings.png" alt="Settings page" width="150">
                         <p class="pt-2 text-lg">Postogon Settings Page</p>
                       </div>
@@ -261,49 +265,55 @@
             </div>
             <!--Work Experience-->
             <h1 id="experience" class="text-3xl text-left text-blue-600 font-bold pt-5 ml-10">Work Experience</h1>
-            <div class="bg-white text-black rounded-lg p-10 m-5">
+            <div class="bg-white text-black rounded-lg p-10 m-5 shadow-sm">
               <!--Tab Overlay-->
               <!--Allstate (Overlay)-->
               <div id="overlay1" onclick="off1()">
-                <div id="format" class="bg-blue-600 m-5 md:m-40 p-10 rounded-lg">
+                <div id="format" class="bg-white m-5 md:m-40 p-10 rounded-lg">
                   <div class="p-10">
-                    <img class="rounded-full mx-auto" src="images/Allstate.svg" alt="Allstate Logo" width="150">
+                    <img class="rounded-full border border-black mx-auto" src="images/Allstate.svg" alt="Allstate Logo" width="150">
                   </div>
-                  <p class="text-white text-lg pt-5">Actively contribute as a software engineer on the CTS XP (Claims Technology Accelerated Program) team</p>
-                  <p class="text-white text-lg pt-5">Attend weekly team ceremonies and deliver software</p>
-                  <p class="text-white text-lg pt-5">Paired programming and test driven development.</p>
+                  <div class="text-black text-lg pt-5">
+                    <p>Actively contribute as a software engineer on the CTS XP (Claims Technology Accelerated Program) team</p>
+                    <p>Attend weekly team ceremonies and deliver software</p>
+                    <p>Paired programming and test driven development.</p>
+                  </div>
                 </div>
               </div>
               <!--Apple (Overlay)-->
               <div id="overlay2" onclick="off2()">
-                <div id="format" class="bg-blue-600 m-5 md:m-40 p-10 rounded-lg">
+                <div id="format" class="bg-white m-5 md:m-40 p-10 rounded-lg">
                   <div class="p-10">
-                    <img class="rounded-full mx-auto" src="images/Apple.svg" alt="Apple Logo" width="150">
+                    <img class="rounded-full border border-black mx-auto" src="images/Apple.svg" alt="Apple Logo" width="150">
                   </div>
-                  <p class="text-white text-lg pt-5">Highly skilled at uncovering customers' needs, then following through with enlightening solutions</p>
-                  <p class="text-white text-lg pt-5">Maintaining visual merchandising and assisting team members</p>
-                  <p class="text-white text-lg pt-5">Ready to apply my learning in customer interactions</p>
+                  <div class="text-black text-lg pt-5">
+                    <p>Highly skilled at uncovering customers' needs, then following through with enlightening solutions</p>
+                    <p>Maintaining visual merchandising and assisting team members</p>
+                    <p>Ready to apply my learning in customer interactions</p>
+                  </div>
                 </div>
               </div>
               <!--Postogon (Overlay)-->
               <div id="overlay3" onclick="off3()">
-                <div id="format" class="bg-blue-600 m-5 md:m-40 p-10 rounded-lg">
+                <div id="format" class="bg-white m-5 md:m-40 p-10 rounded-lg">
                   <div class="p-10">
-                    <div class="w-40 h-40 rounded-full bg-white mx-auto">
+                    <div class="w-40 h-40 rounded-full border border-black bg-white mx-auto">
                       <svg aria-label="Home" class="relative top-5 mx-auto" id="logo" width="125" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 601 572">
                       <path d="M549.528 354.832C587.161 317.204 549.528 231.128 549.528 163.867C549.528 96.6061 525.301 139.644 473.555 87.9045C421.81 36.1652 428.395 77.7918 374.533 23.936C320.67 -29.9199 277.627 23.936 199.773 23.936C121.684 23.936 59.824 163.867 59.824 163.867C-93.5319 163.867 104.278 326.611 38.4201 392.461C-27.4383 458.311 108.277 462.309 183.544 537.566C258.81 612.823 342.309 537.566 438.98 537.566C535.886 537.566 417.576 427.267 549.293 427.267C681.48 427.502 511.894 392.461 549.528 354.832ZM426.043 357.184C359.715 357.184 419.222 412.686 370.534 412.686C321.846 412.686 279.744 450.55 241.875 412.686C204.007 374.822 135.561 372.706 168.725 339.546C201.89 306.385 102.397 224.308 179.545 224.308C179.545 224.308 210.593 153.755 250.108 153.755C289.387 153.755 311.026 126.709 338.075 153.755C365.124 180.8 361.831 159.869 387.94 185.974C414.048 212.079 426.278 190.442 426.278 224.308C426.278 258.174 445.33 301.447 426.278 320.496C406.991 339.546 492.372 357.184 426.043 357.184Z"></path>
                       </svg>
                     </div>
                   </div>
-                  <p class="text-white text-lg pt-5">Follow agile methodology to develop and test new features</p>
-                  <p class="text-white text-lg pt-5">Utilize Figma to storyboard visualizations for front end development</p>
-                  <p class="text-white text-lg pt-5">Create documentation to streamline development</p>
+                  <div class="text-black text-lg pt-5">
+                    <p>Follow agile methodology to develop and test new features</p>
+                    <p>Utilize Figma to storyboard visualizations for front end development</p>
+                    <p>Create documentation to streamline development</p>
+                  </div>
                 </div>
               </div>
               <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-10">
                 <!--Allstate-->
                 <button onclick="on1()">
-                  <div class="hover:text-green-300">
+                  <div class="hover:text-blue-400">
                     <div>
                       <img class="rounded-full border border-black mx-auto" src="images/Allstate.svg" alt="Allstate Logo" width="150">
                     </div>
@@ -312,7 +322,7 @@
                 </button>
                 <!--Apple-->
                 <button class="tabHeader" onclick="on2()">
-                  <div class="hover:text-green-300">
+                  <div class="hover:text-blue-400">
                     <div>
                       <img class="rounded-full border border-black mx-auto" src="images/Apple.svg" alt="Apple Logo" width="150">
                     </div>
@@ -321,7 +331,7 @@
                 </button>
                 <!--Postogon-->
                 <button class="tabHeader" onclick="on3()">
-                  <div class="hover:text-green-300">
+                  <div class="hover:text-blue-400">
                     <div class="w-40 h-40 border border-black rounded-full bg-white mx-auto">
                       <svg aria-label="Home" class="relative top-5 mx-auto" id="logo" width="125" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 601 572">
                       <path d="M549.528 354.832C587.161 317.204 549.528 231.128 549.528 163.867C549.528 96.6061 525.301 139.644 473.555 87.9045C421.81 36.1652 428.395 77.7918 374.533 23.936C320.67 -29.9199 277.627 23.936 199.773 23.936C121.684 23.936 59.824 163.867 59.824 163.867C-93.5319 163.867 104.278 326.611 38.4201 392.461C-27.4383 458.311 108.277 462.309 183.544 537.566C258.81 612.823 342.309 537.566 438.98 537.566C535.886 537.566 417.576 427.267 549.293 427.267C681.48 427.502 511.894 392.461 549.528 354.832ZM426.043 357.184C359.715 357.184 419.222 412.686 370.534 412.686C321.846 412.686 279.744 450.55 241.875 412.686C204.007 374.822 135.561 372.706 168.725 339.546C201.89 306.385 102.397 224.308 179.545 224.308C179.545 224.308 210.593 153.755 250.108 153.755C289.387 153.755 311.026 126.709 338.075 153.755C365.124 180.8 361.831 159.869 387.94 185.974C414.048 212.079 426.278 190.442 426.278 224.308C426.278 258.174 445.33 301.447 426.278 320.496C406.991 339.546 492.372 357.184 426.043 357.184Z"></path>
@@ -335,23 +345,23 @@
             <!--Footer-->
             <footer>
               <h1 class="text-blue-600 text-3xl text-left font-bold pt-5 ml-10">Contact</h1>
-              <div class="bg-white rounded-xl p-10 m-5">
+              <div class="bg-white rounded-xl p-10 m-5 shadow-sm">
                 <div class="p-4 mb-5">
                   <div class="flex flex-row justify-center">
                     <a href="https://www.linkedin.com/in/oke-oghene-amuwha-1b1489203/" target="_blank">
-                      <div class="m-2 md:m-5 hover:text-green-300">
+                      <div class="m-2 md:m-5 hover:text-blue-400">
                         <img class="rounded-full mx-auto border border-black" src="images/LinkedIn.svg" alt="Linkedin" width="50">
                         <p class="pt-2 text-sm">LinkedIn</p>
                       </div>
                     </a>
                     <a href="mailto: gv4281@wayne.edu">
-                      <div class="m-2 md:m-5 hover:text-green-300">
+                      <div class="m-2 md:m-5 hover:text-blue-400">
                         <img class="rounded-full mx-auto border border-black" src="images/Mail.svg" alt="Mail" width="50">
                         <p class="pt-2 text-sm">Mail</p>
                       </div>
                     </a>
                     <a href="https://github.com/amuwhao46" target="_blank">
-                    <div class="m-2 md:m-5 hover:text-green-300">
+                    <div class="m-2 md:m-5 hover:text-blue-400">
                       <img class="rounded-full mx-auto border border-black" src="images/Github.svg" alt="Github" width="50">
                       <p class="pt-2 text-sm">Github</p>
                     </div>
@@ -389,15 +399,16 @@
         menu.classList.toggle('hidden')
         })
       })
+    </script>
+    <!--Blur background on scroll-->
+    <script>
+      /*
+      $(window).scroll(function() {
+        let s = $(window).scrollTop(),
 
-      /*Blur background on scroll
-      $(window).scroll(function(e) {
+        opacityVal = (s / 150);
 
-        let elOffset = $('.parallax').scrollTop() - $(window).scrollTop();
-
-        if(elOffset < 50) {
-          $(this).addClass('blur');
-        }
+        $('.blurred-img').css('opacity', opacityVal);
       });*/
     </script>
     <!--Javascript Tabs-->
