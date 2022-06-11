@@ -13,7 +13,15 @@ html {
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
+/*
+.blurred-img {
+    opacity: 100;
+}*/
 .blur {
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
@@ -39,16 +47,16 @@ nav {
     transition: 0.3s;
 }
 .tabs button:hover {
-    color: rgb(134, 239, 172);
+    color: rgb(96, 165, 250);
 }
   
 /* Active tab*/
 .tabs button.active {
-    color: rgb(48, 148, 106);
+    color: rgb(37, 99, 235);
 }
 #overlay1 {
     position: fixed;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
     display: none;
     width: 100%;
     height: 100%;
