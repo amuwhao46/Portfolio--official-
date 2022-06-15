@@ -8,7 +8,7 @@ html {
 
 /*Parallax effect for background*/
 .parallax {
-    background-image: url(images/Hexagon.jpg);
+    background-image: url(images/Background.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
