@@ -1,7 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 html {
     scroll-behavior: smooth;
 }
@@ -56,10 +52,10 @@ nav {
 }
 #overlay1 {
     position: fixed;
-    /*overflow-x: hidden;*/
+    overflow-x: hidden;
     display: none;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     top: 0;
     left: 0;
     right: 0;
@@ -69,38 +65,36 @@ nav {
     backdrop-filter: blur(4px);
     z-index: 2;
     cursor: pointer;
-    transition: 2s;
 }
 #overlay2 {
     position: fixed;
-    /*overflow-x: hidden; <---- Scroll in overlay*/
+    overflow-x: hidden;
     display: none;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.1);
-    -webkit-backdrop-filter: blur(8px);
-    backdrop-filter: blur(8px);
+    background-color: rgba(0,0,0,0.3);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
     z-index: 2;
     cursor: pointer;
 }
 #overlay3 {
     position: fixed;
-    /*overflow-x: hidden;*/
+    overflow-x: hidden;
     display: none;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0,0,0,0.3);
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
     z-index: 2;
     cursor: pointer;
-    transition: 0.3s;
 }  
