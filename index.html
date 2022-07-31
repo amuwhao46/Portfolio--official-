@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> <!--Tailwind-->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="./dist/output.css" rel="stylesheet"> <!--Tailwind-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"> <!--Animate.css (future use)-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="Stylesheet" href="styles.css">
@@ -28,7 +29,7 @@
           </button>
         </div>
         <div id="content" class="w-full hidden transition-all ease-in-out md:flex md:items-center md:w-auto">
-          <div class="text-sm md:flex-grow">
+          <div class="text-sm dark:text-white md:flex-grow">
             <a href="#school" class="block mt-4 md:inline-block md:mt-0 hover:text-blue-400 mr-4">About</a>
             <a href="#skills" class="block mt-4 md:inline-block md:mt-0 hover:text-blue-400 mr-4">Skills</a>
             <a href="#projects" class="block mt-4 md:inline-block md:mt-0 hover:text-blue-400 mr-4">Projects</a>
@@ -52,30 +53,30 @@
           <img class="mx-auto" src="images/Logo.svg" alt="Logo" width="80"> <!--Logo-->
         </div>
         <!--School-->
-        <div id="school" class="bg-gray-100 rounded-tl-lg rounded-tr-lg">
+        <div id="school" class="bg-gray-100 dark:bg-black rounded-tl-lg rounded-tr-lg">
             <div class="text-center">
               <div class="bg-white rounded-xl p-10 m-5 shadow-sm">
               <!--School img-->
               <img class="w-60 h-60 rounded-full border-solid border border-black mx-auto shadow-lg" src="images/School.svg" alt="School glyph" width="300">
-              <h1 class="text-3xl font-bold pt-10">Wayne State University</h1>
+              <h1 class="dark:text-white text-3xl font-bold pt-10">Wayne State University</h1>
               <!--About Me-->
-              <p class="mb-5">Bachelor of Science in Computer Science</p>
+              <p class="dark:text-white mb-5">Bachelor of Science in Computer Science</p>
               <!--About me Tabs-->
               <!--Links-->
               <div class="tabs mb-10">
-                <button class="tablinks" onclick="aboutSec(event, 'About')" id="default"><p class="text-3xl font-bold p-5">About</p></button>
-                <button class="tablinks" onclick="aboutSec(event, 'Interests')"><p class="text-3xl font-bold p-5">Interests</p></button>
-                <button class="tablinks" onclick="aboutSec(event, 'Hobbies')"><p class="text-3xl font-bold p-5">Hobbies</p></button>
+                <button class="tablinks" onclick="aboutSec(event, 'About')" id="default"><p class="dark:text-white text-3xl font-bold p-5">About</p></button>
+                <button class="tablinks" onclick="aboutSec(event, 'Interests')"><p class="dark:text-white text-3xl font-bold p-5">Interests</p></button>
+                <button class="tablinks" onclick="aboutSec(event, 'Hobbies')"><p class="dark:text-white text-3xl font-bold p-5">Hobbies</p></button>
               </div>
               <!--Content-->
               <div id="About" class="tabcontent">
-                <p class="mb-20 md:px-10">Hello! My name is Oke Amuwha. I am currently a junior at Wayne State University pursuing 
+                <p class="dark:text-white mb-20 md:px-10">Hello! My name is Oke Amuwha. I am currently a junior at Wayne State University pursuing 
                   my bachelors in Computer Science. After I graduate I hope to work in computer software engineering, helping in machine learning,
                   full stack development or UI/UX design.
                 </p>
               </div>
               <div id="Interests" class="tabcontent">
-                <p class="mb-20 md:px-10">I've always had an interest in how and why stuff just seems to work.
+                <p class="dark:text-white mb-20 md:px-10">I've always had an interest in how and why stuff just seems to work.
                   When I was younger I would always look up at the stars in amazement at whats out there. Constantly
                   learning about deep space and the mysteries thats out there. 
                   Nowawdays I'm more focused on the mind and it's interpretation of reality and the parallels it has with the technology
@@ -88,7 +89,7 @@
                 </p>
               </div>
               <div id="Hobbies" class="tabcontent">
-                <p class="mb-20 md:px-10">When I get an idea to do something, I start it immediately; The research, planning and developing
+                <p class="dark:text-white mb-20 md:px-10">When I get an idea to do something, I start it immediately; The research, planning and developing
                   Sometimes in the midst of that excitement I end up taking a lot longer to finish the project or focusing on something else
                   something else that catches my interests. I also like watching educational youtubers like Veritasium or Vsauce
                   The way they're able to explain advanced concepts in an interactive and relatable way reinforces my love for learning.
@@ -98,7 +99,7 @@
             </div>
             <!--Skills-->
             <h1 id="skills" class="text-3xl text-left text-blue-600 font-bold pt-5 ml-10">Skills</h1>
-            <div class="bg-white text-black rounded-xl p-10 m-5 shadow-sm">
+            <div class="bg-white text-black dark:text-white rounded-xl p-10 m-5 shadow-sm">
               <div class="grid grid-cols-2 md:grid-cols-4 gap-6 pt-10">
                 <!--C++-->
                 <div class="mb-5">
@@ -262,7 +263,7 @@
             </div>
             <!--Work Experience-->
             <h1 id="experience" class="text-3xl text-left text-blue-600 font-bold pt-5 ml-10">Work Experience</h1>
-            <div class="bg-white text-black rounded-lg p-10 m-5 shadow-sm">
+            <div class="bg-white text-black dark:text-white rounded-lg p-10 m-5 shadow-sm">
               <!--Tab Overlay-->
               <!--Allstate (Overlay)-->
               <div id="overlay1" onclick="off1()">
@@ -270,7 +271,7 @@
                   <div class="p-10">
                     <img class="rounded-full border border-black mx-auto" src="images/Allstate.svg" alt="Allstate Logo" width="150">
                   </div>
-                  <div class="text-black text-lg pt-5">
+                  <div class="text-black dark:text-white text-lg pt-5">
                     <p class="p-2">Building full stack programs using React, javascript/typescript (frontend) and Java, Spring boot, JUnit (backend)</p>
                     <p class="p-2">Partook in the launch of a new customer facing product launch that has been in development for over a year</p>
                     <p class="p-2">Helped start up another internal product with other interns with the assistance of senior developers</p>
@@ -285,7 +286,7 @@
                   <div class="p-10">
                     <img class="rounded-full border border-black mx-auto" src="images/Apple.svg" alt="Apple Logo" width="150">
                   </div>
-                  <div class="text-black text-lg pt-5">
+                  <div class="text-black dark:text-white text-lg pt-5">
                     <p class="p-2">Highly skilled at uncovering customers' needs, then following through with enlightening solutions</p>
                     <p class="p-2">Maintaining visual merchandising and assisting team members</p>
                     <p class="p-2">Ready to apply my learning in customer interactions</p>
@@ -302,14 +303,14 @@
                       </svg>
                     </div>
                   </div>
-                  <div class="text-black text-lg pt-5">
+                  <div class="text-black dark:text-white text-lg pt-5">
                     <p class="p-2">Follow agile methodology to develop and test new features</p>
                     <p class="p-2">Utilize Figma to storyboard visualizations for front end development</p>
                     <p class="p-2">Create documentation to streamline development</p>
                   </div>
                 </div>
               </div>
-              <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-10">
+              <div class="dark:text-white grid grid-cols-1 md:grid-cols-3 gap-6 pt-10">
                 <!--Allstate-->
                 <button onclick="on1()">
                   <div class="hover:text-blue-400">
@@ -344,7 +345,7 @@
             <!--Footer-->
             <footer>
               <h1 class="text-blue-600 text-3xl text-left font-bold pt-5 ml-10">Contact</h1>
-              <div class="bg-white rounded-xl p-10 m-5 shadow-sm">
+              <div class="bg-white dark:text-white rounded-xl p-10 m-5 shadow-sm">
                 <div class="p-4 mb-5">
                   <div class="flex flex-row justify-center">
                     <a href="https://www.linkedin.com/in/oke-oghene-amuwha-1b1489203/" target="_blank">
