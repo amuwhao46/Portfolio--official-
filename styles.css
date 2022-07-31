@@ -25,11 +25,11 @@ html {
 /*Navbar*/
 nav {
     top: -150px;
-    background-color: #efefef88;
-    -webkit-backdrop-filter: blur(8px);
-    backdrop-filter: blur(8px);
+    /* background-color: rgba(239, 239, 239, 0.533); */
+    /* -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px); */
     transition: top .5s;
-    z-index: 5;
+    /* z-index: 5; */
 }
 /*Tabs*/
 .tabs {
@@ -60,8 +60,8 @@ nav {
     right: 0;
     bottom: 0;
     background-color: rgba(0,0,0,0.3);
-    -webkit-backdrop-filter: blur(4px);
-    backdrop-filter: blur(4px);
+    /* -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px); */
     z-index: 2;
     cursor: pointer;
 }
@@ -76,8 +76,8 @@ nav {
     right: 0;
     bottom: 0;
     background-color: rgba(0,0,0,0.3);
-    -webkit-backdrop-filter: blur(4px);
-    backdrop-filter: blur(4px);
+    /* -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px); */
     z-index: 2;
     cursor: pointer;
 }
@@ -92,8 +92,8 @@ nav {
     right: 0;
     bottom: 0;
     background-color: rgba(0,0,0,0.3);
-    -webkit-backdrop-filter: blur(4px);
-    backdrop-filter: blur(4px);
+    /* -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px); */
     z-index: 2;
     cursor: pointer;
 }  
