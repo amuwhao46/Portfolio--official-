@@ -4,7 +4,7 @@ html {
 
 /*Parallax effect for background*/
 .parallax {
-    background-image: url(images/Background.jpg);
+    background-image: url(images/Background1.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
