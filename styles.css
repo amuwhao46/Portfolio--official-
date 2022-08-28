@@ -4,7 +4,7 @@ html {
 
 /*Parallax effect for background*/
 .parallax {
-    background-image: url(images/Background1.jpg);
+    background-image: url(images/Crosses.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -42,12 +42,12 @@ nav {
     transition: 0.3s;
 }
 .tabs button:hover {
-    color: rgb(96, 165, 250);
+    color: rgb(55, 48, 163);
 }
   
 /* Active tab*/
 .tabs button.active {
-    color: rgb(37, 99, 235);
+    color: rgb(76, 29, 149);
 }
 #overlay1 {
     position: fixed;
