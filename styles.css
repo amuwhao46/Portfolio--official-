@@ -4,7 +4,7 @@ html {
 
 /*Parallax effect for background*/
 .parallax {
-    background-image: url(images/Crosses.jpg);
+    background-image: url(images/Flow_Background.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
