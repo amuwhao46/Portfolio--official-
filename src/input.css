@@ -5,3 +5,8 @@
 #toggle:checked ~ label div.toggle-dot {
     @apply translate-x-3;
 }
+
+nav {
+    top: -150px;
+    transition: top .5s;
+}
