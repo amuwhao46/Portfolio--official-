@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!--Website by Oke-Oghene Amuwha-->
 <html>
   <head>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
@@ -10,7 +11,9 @@
     <title>Oke's Portfolio</title>
     <link rel="icon" href="images/Favicon_Logo.png" type="image/png"> <!--Favicon-->
   </head>
+
 <!--Website by Oke-Oghene Amuwha-->
+
 
   <!--Body-->
   <body>
@@ -19,32 +22,33 @@
       <!--Navbar-->
       <nav id="navbar" class="fixed bg-gray-200/50 backdrop-blur inset-x-0 flex flex-center justify-between flex-wrap p-5 z-5 md:mx-10 md:mt-5 shadow-xl md:rounded-lg rounded-bl-lg rounded-br-lg">
         <a href="#">
-          <div class="flex items-center flex-shrink-0 text-pink-800 mr-6">
+          <div class="text-pink-800 flex items-center flex-shrink-0 mr-6">
             <img class="fill-current h-8 w-8 mr-2" src="images/Logo.svg" alt="Logo" width="20">
             <span class="font-bold text-2xl tracking-tight">Oke Amuwha</span>
           </div>
         </a>
         <div id="hamburger" class="block md:hidden">
-          <button class="flex items-center px-3 py-2 border border-black rounded hover:text-pink-800 hover:border-pink-800">
+          <button class="border border-black hover:text-pink-800 hover:border-pink-800 flex items-center px-3 py-2 rounded">
             <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
           </button>
         </div>
         <div id="content" class="w-full hidden transition-all ease-in-out md:flex md:items-center md:w-auto">
           <div class="text-sm md:flex-grow">
-            <a href="#school" class="block mt-4 md:inline-block md:mt-0 hover:text-yellow-500 mr-4">About</a>
-            <a href="#skills" class="block mt-4 md:inline-block md:mt-0 hover:text-yellow-500 mr-4">Skills</a>
-            <a href="#projects" class="block mt-4 md:inline-block md:mt-0 hover:text-yellow-500 mr-4">Projects</a>
-            <a href="#experience" class="block mt-4 md:inline-block md:mt-0 hover:text-yellow-500 mr-4">Experience</a>
+            <a href="#school" class="hover:text-yellow-500 transition block mt-4 md:inline-block mr-4 md:mt-0">About</a>
+            <a href="#skills" class="hover:text-yellow-500 transition block mt-4 md:inline-block mr-4 md:mt-0">Skills</a>
+            <a href="#projects" class=" hover:text-yellow-500 transition block mt-4 md:inline-block md:mt-0 mr-4">Projects</a>
+            <a href="#experience" class="hover:text-yellow-500 transition block mt-4 md:inline-block md:mt-0 mr-4">Experience</a>
           </div>
           <div>
-            <a href="files/Oke-Oghene_Amuwha_Resume.pdf" target="_blank" class="inline-block text-sm px-4 py-2 leading-none border rounded text-yellow-500 border-yellow-500 hover:border-transparent hover:text-white hover:bg-pink-800 mt-4 md:mt-0">
+            <a href="files/Oke-Oghene_Amuwha_Resume.pdf" target="_blank" class="text-yellow-500 border-yellow-500 hover:text-white hover:bg-pink-800 transition inline-block text-sm px-4 py-2 leading-none border rounded hover:border-transparent mt-4 md:mt-0">
               Resume
             </a>
           </div>
         </div>
       </nav>
     </header>
-    <div class="parallax">
+    <!--Wallpaper-->
+    <div class="bg-fixed bg-no-repeat bg-center bg-cover" style="background-image: url(images/Background.jpg)">
       <!--Dark mode button-->
       <!-- <div class="flex justify-end items-center space-x-2">
         <span class="text-sm text-gray-800">Light</span>
@@ -65,7 +69,7 @@
           <img class="w-80 h-80 rounded-full mx-auto" src="images/Portrait.jpg" alt="Profile Picture" width="500">
           <div class="mx-auto pb-20 text-white text-center">
             <p class="text-5xl font-bold pt-5">Oke-Oghene Amuwha</p>
-            <p class="text-lg px-10 my-5">Lay on the grass, look up at the clouds, and ponder my existence</p>
+            <p class="text-lg px-10 my-5">Dynamic websites are the way to go</p>
             <img class="mx-auto" src="images/Logo.svg" alt="Logo" width="80"> <!--Logo-->
           </div>
           <!--Content-->
@@ -80,15 +84,15 @@
                 <p class="mb-5">Bachelor of Science in Computer Science</p>
                 <!--About me Tabs-->
                 <!--Links-->
-                <div class="tabs mb-10">
-                  <button class="tablinks" onclick="aboutSec(event, 'About')" id="default"><p class="text-3xl font-bold p-5">About</p></button>
-                  <button class="tablinks" onclick="aboutSec(event, 'Interests')"><p class="text-3xl font-bold p-5">Interests</p></button>
-                  <button class="tablinks" onclick="aboutSec(event, 'Hobbies')"><p class="text-3xl font-bold p-5">Hobbies</p></button>
+                <div class="tabs  mb-10">
+                  <button class="tablinks" onclick="aboutSec(event, 'About')" id="default"><p class="hover:text-yellow-500 transition text-3xl font-bold p-5">About</p></button>
+                  <button class="tablinks" onclick="aboutSec(event, 'Interests')"><p class="hover:text-yellow-500 transition text-3xl font-bold p-5">Interests</p></button>
+                  <button class="tablinks" onclick="aboutSec(event, 'Hobbies')"><p class="hover:text-yellow-500 transition text-3xl font-bold p-5">Hobbies</p></button>
                 </div>
                 <!--Content-->
-                <div id="About" class="tabcontent">
-                  <p class="mb-20 md:px-10">Hello! My name is Oke Amuwha. I am currently a rising senior at Wayne State University pursuing 
-                    my bachelors in Computer Science. After I graduate I hope to work in computer software engineering, helping in machine learning,
+                <div id="About" class="tabcontent"> 
+                  <p class="mb-20 md:px-10">Hello! My name is Oke Amuwha. I am currently a senior at Wayne State University pursuing 
+                    my bachelors in Computer Science. After I graduate I hope to work in software engineering, specifically in machine learning,
                     full stack development or UI/UX design.
                   </p>
                 </div>
@@ -100,7 +104,7 @@
                     we interface with. How is it that a certain vibration of particles makes the mind interpret it as music?
                     Likewise, how does tapping a certain part of my phone display cause the flashlight to light up?
                     I believe we will have, at the very least, the beginnings of an understanding of the hard problem of consciousness.
-                    And I want to be a part of that discovery, either contributing my own observations and measurements or indirectly
+                    I want to be a part of that discovery, either contributing my own observations and measurements or indirectly
                     through my field of study. Either way it's amazing how interconnected a lot of things seem to be, even with this 
                     delicate balance it all just works.
                   </p>
@@ -116,7 +120,7 @@
               </div>
               <!--Skills-->
               <h1 id="skills" class="text-3xl text-left text-pink-800 font-bold pt-5 ml-10">Skills</h1>
-              <div class="bg-white text-black rounded-xl p-10 m-5 shadow-sm">
+              <div class="bg-white text-black  rounded-xl p-10 m-5 shadow-sm">
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-6 pt-10">
                   <!--HTML-->
                   <div class="mb-5">
@@ -162,223 +166,176 @@
               </div>
               <!--Projects-->
               <h1 id="projects" class="text-pink-800 text-3xl text-left font-bold pt-5 ml-10">Projects</h1>
+
+              <!-- Live Waveform -->
               <div class="bg-white rounded-xl p-10 m-5 shadow-sm">
-                <div class="mb-10">
-                  <!--Projects in figma-->
-                  <p class="p-5 text-2xl font-semibold">Figma</p>
-                  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-10">
-                    <!--Playlist cover-->
-                    <div class="tabs">
-                      <button id="default2" class="tablinks" onclick="aboutSec(event, 'covers')">
-                        <div class="hover:text-yellow-500">
-                          <img class="rounded-full mx-auto" src="images/Cover.png" alt="Playlist Cover img" width="150">
-                          <p class="pt-2 text-lg">Playlist Covers</p>
-                        </div>
-                      </button>
-                    </div>
-                    <!--Music Player-->
-                    <div class="tabs">
-                      <button class="tablinks" onclick="aboutSec(event, 'mPlayer')">
-                        <div class="hover:text-yellow-500">
-                          <img class="rounded-full mx-auto" src="images/Music.png" alt="Music mock up" width="150">
-                          <p class="pt-2 text-lg">Music player</p>
-                        </div>
-                      </button>
-                    </div>
-                    <!--Portfolio-->
-                    <div class="tabs mb-5">
-                      <button class="tablinks" onclick="aboutSec(event, 'portfolio')">
-                        <div class="hover:text-yellow-500">
-                          <img class="rounded-full mx-auto" src="images/Portfolio.png" alt="Portfolio storyboard" width="150">
-                          <p class="pt-2 text-lg">Portfolio</p>
-                        </div>
-                      </button>
-                    </div>
-                  </div>
-                  <!--Content-->
-                  <div id="covers" class="tabcontent md:p-10">
-                    <img class="rounded-md mx-auto pb-5" src="images/Playlist_Covers.png" alt="Picture of Spotify playlist covers" width="350">
-                    <p>Use Figma to understand the different frames and componants used in design to create comprehensive looking
-                      elements. This is a project I did for fun to make custom spotify playlist covers. 
+                <div class="grid grid-cols-1 md:grid-cols-2">
+                  <!-- Left container -->
+                  <div class="p-10 md:text-left">
+                    <h1 class="text-pink-800 text-2xl font-bold">Live Waveform</h1>
+                    <p class="text-lg mt-10">
+                      Trying to implement Spotify's API to show a live waveform of the current song being played.
+                      The webpage dynamically switches the album cover, Song name, and artist name. The background and the "light shapes"
+                      also move with the beat of the current song
+                    </p>
+                    <p class="text-lg mt-2">
+                      This project uses react and Spotify's to work. It is still a work in progress because I'm currently teaching myself react and API 
+                      requests and responses
+
                     </p>
                   </div>
-                  <div id="mPlayer" class="tabcontent md:p-10">
-                    <img class="rounded-md mx-auto pb-5" src="images/Music_Player.png" alt="Music Player Mock up" width="500">
-                    <p>I used figma and thier prototyping feature to design a rough mock up
-                      of a music streaming service. I mainly did this to test out animations and UI design.
-                    </p>
-                  </div>
-                    <div id="portfolio" class="tabcontent md:p-10">
-                      <img class="rounded-md mx-auto pb-5" src="images/Portfolio (mobile).png" alt="Website Portfolio Mobile Version" width="400">
-                      <p>I used figma to design the portfolio you are currently on. 
-                        I decided to design the mobile version first because it is easier to scale up to a desktop view.
-                        Going from my figma design into the website view, there are some drastic changes because this was mainly 
-                        a framework of how I wanted it to look like roughly.
-                      </p>
-                    </div>
-                  <!--Projects in Code-->
-                  <p class="p-5 text-2xl font-semibold mt-10">Code</p>
-                  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-10">
-                    <!--Game of life-->
-                    <div class="tabs">
-                      <button class="tablinks" onclick="aboutSec(event, 'conway')">
-                        <div class="hover:text-yellow-500">
-                          <img class="rounded-full mx-auto" src="images/Life.png" alt="Game of life" width="150">
-                          <p class="pt-2 text-lg">Game of Life</p>
-                        </div>
-                      </button>
-                    </div>
-                    <!--Discord bot-->
-                    <div class="tabs">
-                      <button class="tablinks" onclick="aboutSec(event, 'discordBot')">
-                        <div class="hover:text-yellow-500">
-                          <img class="rounded-full mx-auto" src="images/Discord.png" alt="Discord bot" width="150">
-                          <p class="pt-2 text-lg">Discord Bot</p>
-                        </div>
-                      </button>
-                    </div>
-                    <!--Postogon-->
-                    <div class="tabs mb-5">
-                      <button class="tablinks" onclick="aboutSec(event, 'postogonSet')">
-                        <div class="hover:text-yellow-500">
-                          <img class="rounded-full border border-black mx-auto" src="images/Settings.png" alt="Settings page" width="150">
-                          <p class="pt-2 text-lg">Postogon Settings Page</p>
-                        </div>
-                      </button>
-                    </div>
-                  </div>
-                  <!--Content-->
-                  <div id="conway" class="tabcontent md:p-10">
-                    <p>
-                      <b class="text-red-600">Work In Progress</b>
-                    </p>
-                    <p>
-                      I'm using Conway's Game of Life to teach me how to use Python in a more applicable sense.
-                      I'm not done with the development of the game because there is a part I'm stuck on that I am actively 
-                      trying to solve.
-                    </p>
-                  </div>
-                  <div id="discordBot" class="tabcontent md:p-10">
-                    <p>
-                      <b class="text-red-600">Work In Progress</b>
-                    </p>
-                    <p>
-                      I am a part of a club at Wayne State called Society for Computer Developers.
-                      We are working on is a Discord Bot that does some basic commands. I was able to learn a bit of javascript
-                      and understand how to read json files. I haven't finished development of it yet.
-                    </p>
-                  </div> 
-                  <div id="postogonSet" class="tabcontent md:p-10">
-                    <img class="rounded-md mx-auto pb-5" src="images/Settings (full).png" alt="Settings image" width="200">
-                    <p>
-                      I was helping my friend and his team build a social media website. What I was tasked on doing
-                      was developing the front end of the settings page. With help from him and some other team members 
-                      I was able to learn Tailwind CSS and PHP (for decoupling the front and back end).
-                    </p>
+                  <!-- Right container -->
+                  <div class="flex justify-end mx-auto">
+                    <img src="images/LiveWaveform.png" alt="Mockup of future project using Spotify" width="250">
                   </div>
                 </div>
               </div>
+              <!-- End Live Waveform -->
+              <!-- Playlist Covers -->
+              <div class="bg-white rounded-xl p-10 m-5 shadow-sm">
+                <div class="grid grid-cols-1 md:grid-cols-2">
+                  <!-- Left container -->
+                  <div class="p-10 md:text-left">
+                    <h1 class="text-pink-800 text-2xl font-bold">Playlist Covers</h1>
+                    <p class="text-lg mt-10">
+                      To familiarize myself with Figma, a UI/UX design tool, I made custom playlist cover arts to reflect the mood
+                      the songs in each playlist conveys. I played around with different techniques and styles to see how far I could take Figma's 
+                      tools
+                    </p>
+                  </div>
+                  <!-- Right container -->
+                  <div class="flex justify-end mx-auto">
+                    <img src="images/PlaylistCover.png" alt="Playlist designs from figma" width="250">
+                  </div>
+                </div>
+              </div>
+              <!-- End Playlist Covers -->
+              <!-- Spotify Mockup -->
+              <div class="bg-white rounded-xl p-10 m-5 shadow-sm">
+                <div class="grid grid-cols-1 md:grid-cols-2">
+                  <!-- Left container -->
+                  <div class="p-10 md:text-left">
+                    <a href="https://www.figma.com/file/5NJoulTAhCrqaZjrRIw6ju/Song-control?node-id=0%3A1" target="_blank">
+                      <h1 class="text-pink-800 hover:text-yellow-500 transition text-2xl font-bold">Spotify Mockup</h1>
+                    </a>
+                      <p class="text-lg mt-10">
+                        In this Figma project, I made a custom music player, inspired by Spotify, to play around with their prototyping tool.
+                        The prototyping tool allows for dynamic designs, letting you see how the different elements interact with each other. 
+                        Currently I haven't thought of implementing this into a usable product                   
+                      </p>
+                  </div>
+                  <!-- Right container -->
+                  <div class="flex justify-end mx-auto">
+                    <img src="images/SpotifyMock.png" alt="Spotify mock design from Figma" width="500">
+                  </div>
+                </div>
+              </div>
+              <!-- End Spotify Mockup -->
+              <!-- End Projects -->
               <!--Work Experience-->
               <h1 id="experience" class="text-3xl text-left text-pink-800 font-bold pt-5 ml-10">Work Experience</h1>
-              <div class="bg-white text-black rounded-lg p-10 m-5 shadow-sm">
-                <!--Tab Overlay-->
-                <!--Allstate (Overlay)-->
-                <div id="overlay1" class="backdrop-blur-sm" onclick="off1()">
-                  <div id="format" class="bg-white m-5 md:m-40 p-10 rounded-lg">
-                    <div class="p-10">
-                      <img class="rounded-full border border-black mx-auto" src="images/Allstate.svg" alt="Allstate Logo" width="150">
-                    </div>
-                    <div class="text-black text-lg pt-5">
-                      <p class="p-2">Building full stack programs using React, javascript/typescript (frontend) and Java, Spring boot, JUnit (backend)</p>
-                      <p class="p-2">Partook in the launch of a new customer facing product launch that has been in development for over a year</p>
-                      <p class="p-2">Helped start up another internal product with other interns with the assistance of senior developers</p>
-                      <p class="p-2">Paired programming and test driven development</p>
-                      <p class="p-2">Utilized terminal to perform git commands</p>
-                    </div>
+              <!-- Allstate -->
+              <div class="bg-white rounded-xl p-10 m-5 shadow-sm">
+                <div class="grid grid-cols-1 md:grid-cols-2">
+                  <!-- Left container -->
+                  <div class="p-10 md:text-left">
+                    <h1 class="text-pink-800 text-2xl font-bold">Allstate</h1>
+                    <p class="text-lg mt-10">
+                      Building full stack programs using React, 
+                      javascript/typescript (frontend) and Java, Spring boot, JUnit (backend)
+                    </p>
+                    <p class="text-lg mt-2">
+                      Partook in the launch of a new customer facing product launch that has been in development for over a year
+                    </p>
+                    <p class="text-lg mt-2">
+                      Helped start up another internal product with other interns with the assistance of senior developers
+                    </p>
+                    <p class="text-lg mt-2">
+                      Paired programming and test driven development
+                    </p>
+                    <p class="text-lg mt-2">
+                      Utilized terminal to perform git commands
+                    </p>
                   </div>
-                </div>
-                <!--Apple (Overlay)-->
-                <div id="overlay2" class="backdrop-blur-sm" onclick="off2()">
-                  <div id="format" class="bg-white m-5 md:m-40 p-10 rounded-lg">
-                    <div class="p-10">
-                      <img class="rounded-full border border-black mx-auto" src="images/Apple.svg" alt="Apple Logo" width="150">
-                    </div>
-                    <div class="text-black text-lg pt-5">
-                      <p class="p-2">Highly skilled at uncovering customers' needs, then following through with enlightening solutions</p>
-                      <p class="p-2">Maintaining visual merchandising and assisting team members</p>
-                      <p class="p-2">Ready to apply my learning in customer interactions</p>
-                    </div>
+                  <!-- Right container -->
+                  <div class="flex justify-end mx-auto">
+                    <img src="images/Allstate.svg" alt="Image of the Allstate logo" width="250">
                   </div>
-                </div>
-                <!--Postogon (Overlay)-->
-                <div id="overlay3" class="backdrop-blur-sm" onclick="off3()">
-                  <div id="format" class="bg-white m-5 md:m-40 p-10 rounded-lg">
-                    <div class="p-10">
-                      <div class="w-40 h-40 rounded-full border border-black bg-white mx-auto">
-                        <svg aria-label="Home" class="relative top-5 mx-auto" id="logo" width="125" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 601 572">
-                        <path d="M549.528 354.832C587.161 317.204 549.528 231.128 549.528 163.867C549.528 96.6061 525.301 139.644 473.555 87.9045C421.81 36.1652 428.395 77.7918 374.533 23.936C320.67 -29.9199 277.627 23.936 199.773 23.936C121.684 23.936 59.824 163.867 59.824 163.867C-93.5319 163.867 104.278 326.611 38.4201 392.461C-27.4383 458.311 108.277 462.309 183.544 537.566C258.81 612.823 342.309 537.566 438.98 537.566C535.886 537.566 417.576 427.267 549.293 427.267C681.48 427.502 511.894 392.461 549.528 354.832ZM426.043 357.184C359.715 357.184 419.222 412.686 370.534 412.686C321.846 412.686 279.744 450.55 241.875 412.686C204.007 374.822 135.561 372.706 168.725 339.546C201.89 306.385 102.397 224.308 179.545 224.308C179.545 224.308 210.593 153.755 250.108 153.755C289.387 153.755 311.026 126.709 338.075 153.755C365.124 180.8 361.831 159.869 387.94 185.974C414.048 212.079 426.278 190.442 426.278 224.308C426.278 258.174 445.33 301.447 426.278 320.496C406.991 339.546 492.372 357.184 426.043 357.184Z"></path>
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="text-black text-lg pt-5">
-                      <p class="p-2">Follow agile methodology to develop and test new features</p>
-                      <p class="p-2">Utilize Figma to storyboard visualizations for front end development</p>
-                      <p class="p-2">Create documentation to streamline development</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-10">
-                  <!--Allstate-->
-                  <button onclick="on1()">
-                    <div class="hover:text-yellow-500">
-                      <div>
-                        <img class="rounded-full border border-black mx-auto" src="images/Allstate.svg" alt="Allstate Logo" width="150">
-                      </div>
-                      <p class="pt-2 text-lg">Allstate</p>
-                    </div>
-                  </button>
-                  <!--Apple-->
-                  <button class="tabHeader" onclick="on2()">
-                    <div class="hover:text-yellow-500">
-                      <div>
-                        <img class="rounded-full border border-black mx-auto" src="images/Apple.svg" alt="Apple Logo" width="150">
-                      </div>
-                      <p class="pt-2 text-lg">Apple</p>
-                    </div>
-                  </button>
-                  <!--Postogon-->
-                  <button class="tabHeader" onclick="on3()">
-                    <div class="hover:text-yellow-500">
-                      <div class="w-40 h-40 border border-black rounded-full bg-white mx-auto">
-                        <svg aria-label="Home" class="relative top-5 mx-auto" id="logo" width="125" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 601 572">
-                        <path d="M549.528 354.832C587.161 317.204 549.528 231.128 549.528 163.867C549.528 96.6061 525.301 139.644 473.555 87.9045C421.81 36.1652 428.395 77.7918 374.533 23.936C320.67 -29.9199 277.627 23.936 199.773 23.936C121.684 23.936 59.824 163.867 59.824 163.867C-93.5319 163.867 104.278 326.611 38.4201 392.461C-27.4383 458.311 108.277 462.309 183.544 537.566C258.81 612.823 342.309 537.566 438.98 537.566C535.886 537.566 417.576 427.267 549.293 427.267C681.48 427.502 511.894 392.461 549.528 354.832ZM426.043 357.184C359.715 357.184 419.222 412.686 370.534 412.686C321.846 412.686 279.744 450.55 241.875 412.686C204.007 374.822 135.561 372.706 168.725 339.546C201.89 306.385 102.397 224.308 179.545 224.308C179.545 224.308 210.593 153.755 250.108 153.755C289.387 153.755 311.026 126.709 338.075 153.755C365.124 180.8 361.831 159.869 387.94 185.974C414.048 212.079 426.278 190.442 426.278 224.308C426.278 258.174 445.33 301.447 426.278 320.496C406.991 339.546 492.372 357.184 426.043 357.184Z"></path>
-                        </svg>
-                      </div>
-                      <p class="pt-2 text-lg">Postogon</p>
-                    </div>
-                  </button>
                 </div>
               </div>
+
+              <!-- End Allstate -->
+              <!-- Apple -->
+              <div class="bg-white rounded-xl p-10 m-5 shadow-sm">
+                <div class="grid grid-cols-1 md:grid-cols-2">
+                  <!-- Left container -->
+                  <div class="p-10 md:text-left">
+                    <h1 class="text-pink-800 text-2xl font-bold">Apple</h1>
+                    <p class="text-lg mt-10">
+                      Highly skilled at uncovering customers' needs, 
+                      then following through with enlightening solutions
+                    </p>
+                    <p class="text-lg mt-2">
+                      Maintaining visual merchandising and assisting team members
+                    </p>
+                    <p class="text-lg mt-2">
+                      Ready to apply my learning in customer interactions
+                    </p>
+                  </div>
+                  <!-- Right container -->
+                  <div class="flex justify-end mx-auto">
+                    <img src="images/Apple.svg" alt="Image of the Apple logo" width="250">
+                  </div>
+                </div>
+              </div>
+              <!-- End Apple -->
+              <!-- Postogon -->
+              <div class="bg-white rounded-xl p-10 m-5 shadow-sm">
+                <div class="grid grid-cols-1 md:grid-cols-2">
+                  <!-- Left container -->
+                  <div class="p-10 md:text-left">
+                    <h1 class="text-pink-800 text-2xl font-bold">Postogon</h1>
+                    <p class="text-lg mt-10">
+                      Follow agile methodology to develop and test new features
+                    </p>
+                    <p class="text-lg mt-2">
+                      Utilize Figma to storyboard visualizations for front end development
+                    </p>
+                    <p class="text-lg mt-2">
+                      Create documentation to streamline development
+                    </p>
+                  </div>
+                  <!-- Right container -->
+                  <div class="flex justify-end mx-auto">
+                    <div class="w-250 rounded-full bg-white">
+                      <img src="images/Postogon.png" alt="Image of the Postogon Logo" width="250">
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Postogon -->
+              <!-- End Work Experience -->
               <!--Footer-->
               <footer>
                 <h1 class="text-pink-800 text-3xl text-left font-bold pt-5 ml-10">Contact</h1>
-                <div class="bg-white rounded-xl p-10 m-5 shadow-sm">
+                <div class="bg-white rounded-xl p-5 m-5 shadow-sm">
                   <div class="p-4">
                     <div class="flex flex-row justify-center">
                       <a href="https://www.linkedin.com/in/oke-oghene-amuwha-1b1489203/" target="_blank">
-                        <div class="m-2 md:m-5 hover:text-yellow-500">
+                        <div class="m-2 md:m-5 hover:text-yellow-500 transition">
                           <img class="rounded-full mx-auto border border-black" src="images/LinkedIn.svg" alt="Linkedin" width="50">
                           <p class="pt-2 text-sm">LinkedIn</p>
                         </div>
                       </a>
                       <a href="mailto: amuwhao46@gmail.com">
-                        <div class="m-2 md:m-5 hover:text-yellow-500">
+                        <div class="m-2 md:m-5 hover:text-yellow-500 transition">
                           <img class="rounded-full mx-auto border border-black" src="images/Mail.svg" alt="Mail" width="50">
                           <p class="pt-2 text-sm">Mail</p>
                         </div>
                       </a>
                       <a href="https://github.com/amuwhao46" target="_blank">
-                      <div class="m-2 md:m-5 hover:text-yellow-500">
+                      <div class="m-2 md:m-5 hover:text-yellow-500 transition">
                         <img class="rounded-full mx-auto border border-black" src="images/Github.svg" alt="Github" width="50">
                         <p class="pt-2 text-sm">Github</p>
                       </div>
@@ -388,14 +345,12 @@
                   <p>Oke Amuwha | &copy 2022</p>
                 </div>
               </footer>
+              <!-- End footer -->
             </div>
           </div>
         </div>
       </main>
     </div>
-    <!--React stuff-->
-    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
     <!--Javascript Navbar-->
     <script>
       /*Show navbar on scroll*/
@@ -450,30 +405,6 @@
         evt.currentTarget.className += " active";
         }
         document.getElementById("default").click(); /*Opens by default*/
-      </script>
-      <script>
-        /*Tab Overlay*/
-        function on1() {
-          document.getElementById("overlay1").style.display = "block";
-        }
-
-        function off1() {
-          document.getElementById("overlay1").style.display = "none";
-        }
-        function on2() {
-          document.getElementById("overlay2").style.display = "block";
-        }
-
-        function off2() {
-          document.getElementById("overlay2").style.display = "none";
-        }
-        function on3() {
-          document.getElementById("overlay3").style.display = "block";
-        }
-
-        function off3() {
-          document.getElementById("overlay3").style.display = "none";
-        }
       </script>
   </body>
 </html>
