@@ -589,9 +589,25 @@ video {
   position: fixed;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
 .inset-x-0 {
   left: 0px;
   right: 0px;
+}
+
+.top-10 {
+  top: 2.5rem;
+}
+
+.bottom-0 {
+  bottom: 0px;
 }
 
 .m-5 {
@@ -748,10 +764,6 @@ video {
   flex-direction: row;
 }
 
-.flex-row-reverse {
-  flex-direction: row-reverse;
-}
-
 .flex-col {
   flex-direction: column;
 }
@@ -893,6 +905,10 @@ video {
 
 .p-4 {
   padding: 1rem;
+}
+
+.p-20 {
+  padding: 5rem;
 }
 
 .px-3 {
@@ -1102,9 +1118,26 @@ nav {
     margin: 1.25rem;
   }
 
+  .md\:m-2 {
+    margin: 0.5rem;
+  }
+
+  .md\:m-20 {
+    margin: 5rem;
+  }
+
+  .md\:m-auto {
+    margin: auto;
+  }
+
   .md\:mx-10 {
     margin-left: 2.5rem;
     margin-right: 2.5rem;
+  }
+
+  .md\:my-auto {
+    margin-top: auto;
+    margin-bottom: auto;
   }
 
   .md\:mt-5 {
@@ -1127,8 +1160,26 @@ nav {
     display: none;
   }
 
+  .md\:min-h-full {
+    min-height: 100%;
+  }
+
   .md\:w-auto {
     width: auto;
+  }
+
+  .md\:min-w-full {
+    min-width: 100%;
+  }
+
+  .md\:min-w-fit {
+    min-width: -webkit-fit-content;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+  }
+
+  .md\:min-w-0 {
+    min-width: 0px;
   }
 
   .md\:flex-grow {
@@ -1149,6 +1200,14 @@ nav {
 
   .md\:p-0 {
     padding: 0px;
+  }
+
+  .md\:p-5 {
+    padding: 1.25rem;
+  }
+
+  .md\:p-10 {
+    padding: 2.5rem;
   }
 
   .md\:px-10 {
