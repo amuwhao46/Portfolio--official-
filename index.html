@@ -15,15 +15,15 @@
     <!--Header-->
     <header>
       <!--Navbar-->
-      <nav id="navbar" class="fixed bg-gray-200/50 dark:bg-neutral-700/50 backdrop-blur inset-x-0 flex flex-center justify-between flex-wrap p-5 z-5 md:mx-10 md:mt-5 shadow-xl md:rounded-lg rounded-bl-lg rounded-br-lg">
+      <nav id="navbar" class="fixed bg-gray-200/50 dark:bg-neutral-800/50 backdrop-blur inset-x-0 flex flex-center justify-between flex-wrap p-5 z-20 md:mx-10 md:mt-5 shadow-xl md:rounded-lg rounded-bl-lg rounded-br-lg">
         <a href="#">
-          <div class="text-fuchsia-700 flex items-center flex-shrink-0 mr-6">
+          <div class="text-blue-700 flex items-center flex-shrink-0 mr-6">
             <img class="fill-current h-8 w-8 mr-2" src="images/Logo.svg" alt="Logo" width="20">
             <span class="font-bold text-2xl tracking-tight">Oke Amuwha</span>
           </div>
         </a>
         <div id="hamburger" class="block md:hidden">
-          <button class="border hover:border-yellow-500 hover:text-yellow-500 text-fuchsia-700 border-fuchsia-700 transition-colors flex items-center px-3 py-2 rounded">
+          <button class="border hover:border-blue-400 hover:text-blue-400 text-blue-700 border-blue-700 transition-colors flex items-center px-3 py-2 rounded">
             <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
               <title>Menu</title>
               <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
@@ -32,14 +32,14 @@
         </div>
         <div id="content" class="w-full hidden transition-all ease-in-out md:flex md:items-center md:w-auto">
           <div class="dark:text-white text-sm md:flex-grow">
-            <a href="#school" class="hover:text-yellow-500 transition block mt-4 md:inline-block mr-4 md:mt-0">About</a>
-            <a href="#skills" class="hover:text-yellow-500 transition block mt-4 md:inline-block mr-4 md:mt-0">Skills</a>
-            <a href="#projects" class=" hover:text-yellow-500 transition block mt-4 md:inline-block md:mt-0 mr-4">Projects</a>
-            <a href="#experience" class="hover:text-yellow-500 transition block mt-4 md:inline-block md:mt-0 mr-4">Experience</a>
-            <a href="#contacts" class="hover:text-yellow-500 transition block mt-4 md:inline-block md:mt-0 mr-4">Contact</a>
+            <a href="#school" class="hover:text-blue-400 transition block mt-4 md:inline-block mr-4 md:mt-0">About</a>
+            <a href="#skills" class="hover:text-blue-400 transition block mt-4 md:inline-block mr-4 md:mt-0">Skills</a>
+            <a href="#projects" class=" hover:text-blue-400 transition block mt-4 md:inline-block md:mt-0 mr-4">Projects</a>
+            <a href="#experience" class="hover:text-blue-400 transition block mt-4 md:inline-block md:mt-0 mr-4">Experience</a>
+            <a href="#contacts" class="hover:text-blue-400 transition block mt-4 md:inline-block md:mt-0 mr-4">Contact</a>
           </div>
           <div>
-            <a href="files/Oke-Oghene_Amuwha_Resume.pdf" target="_blank" class="text-fuchsia-700 border-fuchsia-700 hover:text-white hover:bg-yellow-500 transition inline-block text-sm px-4 py-2 leading-none border rounded hover:border-transparent mt-4 md:mt-0">
+            <a href="files/Oke-Oghene_Amuwha_Resume.pdf" target="_blank" class="text-blue-700 border-blue-700 hover:text-white hover:bg-blue-400 transition inline-block text-sm px-4 py-2 leading-none border rounded hover:border-transparent mt-4 md:mt-0">
               Resume
             </a>
           </div>
@@ -48,7 +48,7 @@
       <!-- End Navbar -->
     </header>
     <!--Wallpaper-->
-    <div class="bg-fixed bg-no-repeat bg-center bg-cover" style="background-image: url(images/Background.jpg)">
+    <div class="bg-fixed bg-no-repeat bg-center bg-cover" style="background-image: url(images/City.JPG)">
       <!--Dark mode button-->
       <!-- <div class="flex justify-end items-center space-x-2">
         <span class="text-sm text-gray-800">Light</span>
@@ -72,7 +72,7 @@
           <img class="mx-auto" src="images/Logo.svg" alt="Logo" width="80"> <!--Logo-->
         </div>
         <!--Content-->
-        <div id="school" class="bg-gray-100/95 dark:bg-black py-2 rounded-tl-lg rounded-tr-lg">
+        <div id="school" class="bg-gray-100/50 backdrop-blur-md dark:bg-black z-0 py-2 rounded-tl-lg rounded-tr-lg">
           <div class="text-center">
             <!--School-->
             <div class="bg-white dark:bg-neutral-900 dark:text-white rounded-xl p-10 m-5 shadow-md">
@@ -85,13 +85,13 @@
               <!--Links-->
               <div class="tabs mb-10">
                 <button class="tablinks" onclick="aboutSec(event, 'About')" id="default">
-                  <p class="hover:text-yellow-500 transition text-3xl font-bold p-5">About</p>
+                  <p class="hover:text-blue-400 transition text-3xl font-bold p-5">About</p>
                 </button>
                 <button class="tablinks" onclick="aboutSec(event, 'Interests')">
-                  <p class="hover:text-yellow-500 transition text-3xl font-bold p-5">Interests</p>
+                  <p class="hover:text-blue-400 transition text-3xl font-bold p-5">Interests</p>
                 </button>
                 <button class="tablinks" onclick="aboutSec(event, 'Hobbies')">
-                  <p class="hover:text-yellow-500 transition text-3xl font-bold p-5">Hobbies</p>
+                  <p class="hover:text-blue-400 transition text-3xl font-bold p-5">Hobbies</p>
                 </button>
               </div>
               <!--Content-->
@@ -124,7 +124,7 @@
               </div>
             </div>
             <!--Skills-->
-            <h1 id="skills" class="text-3xl text-left text-fuchsia-700 font-bold pt-5 ml-10">Skills</h1>
+            <h1 id="skills" class="text-3xl text-left text-blue-700 font-bold pt-5 ml-10">Skills</h1>
             <div class="bg-white text-black dark:bg-neutral-900 dark:text-white  rounded-xl p-10 m-5 shadow-md">
               <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
                 <!--HTML-->
@@ -170,14 +170,14 @@
               </div>
             </div>
             <!--Projects-->
-            <h1 id="projects" class="text-fuchsia-700 text-3xl text-left font-bold pt-5 ml-10">Projects</h1>
+            <h1 id="projects" class="text-blue-700 text-3xl text-left font-bold pt-5 ml-10">Projects</h1>
             <!-- Live Waveform -->
             <div class="bg-white dark:bg-neutral-900 dark:text-white rounded-xl p-10 md:p-0 m-5 shadow-md">
               <div class="md:flex">
                 <!-- Left container -->
                 <div class="p-10 md:text-left">
                   <a href="https://github.com/amuwhao46/nowplaying" target="_blank">
-                    <h1 class="text-fuchsia-700 hover:text-yellow-500 transition text-2xl font-bold">Live Waveform</h1>
+                    <h1 class="text-blue-700 hover:text-blue-400 transition text-2xl font-bold">Live Waveform</h1>
                   </a>
                   <p class="text-lg mt-10">
                     Trying to implement Spotify's API to show a live waveform of the current song being played.
@@ -190,21 +190,82 @@
                   </p>
                 </div>
                 <!-- Right container -->
-                <div>
-                  <img class="mx-auto rounded-lg md:min-h-full" src="images/LiveWaveform.png" alt="Mockup of future project using Spotify" width="550">
+                <div class="md:m-5">
+                  <img class="mx-auto rounded-lg" src="images/LiveWaveform.png" alt="Mockup of future project using Spotify" width="450">
                 </div>
               </div>
             </div>
             <!-- End Live Waveform -->
             <!-- Display side by side -->
             <div class="md:flex">
+              <!-- Website Portfolio -->
+              <div class="bg-white dark:bg-neutral-900 dark:text-white rounded-xl p-10 md:p-0 m-5 shadow-md">
+                <div>
+                  <!-- Left container -->
+                  <div class="p-10 md:text-left">
+                    <h1 class="text-blue-700 text-2xl font-bold">Website</h1>
+                    <p class="text-lg mt-10">
+                      I made this Website using HTML, Javascript and TailwindCSS. Over the course of my journey creating
+                      this website I've learned how to utilize Tailwind to style my webpage with a utility-first approach
+                    </p>
+                    <p class="text-lg mt-2">
+                      Over the past several months I've went through multiple designs as I've learned to create a responsive
+                      webpage that looks great on both desktop and mobile screens. Especially making use of blur effects and flex boxes
+                      to make the website look clean and modern
+                    </p>
+                    <p class="text-lg mt-2">
+                      I used prior knowledge and help from friends to learn how to launch a production ready webpage that loads fast and 
+                      stays up to date with the latest changes I make. 
+                      Github has the latest changes I've made before releasing them into production
+                    </p>
+                  </div>
+                  <!-- Right container -->
+                  <div class="md:m-5">
+                    <img class="mx-auto rounded-lg" src="images/Website.jpeg" alt="Mockup of future project using Spotify" width="600">
+                  </div>
+                </div>
+              </div>
+              <!-- End Website Portfolio -->
+              <!-- NFT Project -->
+              <div class="bg-white dark:bg-neutral-900 dark:text-white rounded-xl p-10 md:p-0 m-5 shadow-md">
+                <div>
+                  <!-- Left container -->
+                  <div class="p-10 md:text-left">
+                    <a href="https://github.com/amuwhao46/Databases/tree/oke" target="_blank">
+                      <h1 class="text-blue-700 hover:text-blue-400 transition text-2xl font-bold">NFT Project</h1>
+                    </a>
+                    <p class="text-lg mt-10">
+                      This is a school project I've been working on for my database class. In this project we make an NFT website
+                      that allows users to mint, transfer, or list an NFT. Every new account, NFT, transfer, and listing is recorded
+                      in seperate tables in a database.
+                    </p>
+                    <p class="text-lg mt-2">
+                      Java is used in the backend to initialize the database and perform SQL commands to insert, update, create amd delete rows
+                      or columns of information. In the front end we utilize .jsp files that allow us to include html and javascript to dynamically
+                      update with new information.
+                    </p>
+                    <p class="text-lg mt-2">
+                      As of the time this is written, the project is still on going but, I hope to be able to show a working version of it soon.
+                      This project was also made in collaberation through github with another partner.
+                    </p>
+                  </div>
+                  <!-- Right container -->
+                  <div class="md:m-5">
+                    <img class="mx-auto rounded-lg" src="images/Database.png" alt="Spotify mock design from Figma" width="600">
+                  </div>
+                </div>
+              </div>
+              <!-- End NFT Project -->
+            </div>
+            <!-- Display side by side -->
+            <div class="md:flex">
               <!-- Playlist Covers -->
               <div class="bg-white dark:bg-neutral-900 dark:text-white rounded-xl p-10 md:p-0  m-5 shadow-md">
                 <div>
                   <!-- Left container -->
-                  <div class="p-10  md:text-left">
+                  <div class="p-10 md:text-left">
                     <a href="https://www.figma.com/file/wbxXLggR5uTiDMxChygNsr/Playlist-Cover?node-id=0%3A1" target="_blank">
-                      <h1 class="text-fuchsia-700 hover:text-yellow-500 transition text-2xl font-bold">Playlist Covers</h1>
+                      <h1 class="text-blue-700 hover:text-blue-400 transition text-2xl font-bold">Playlist Covers</h1>
                     </a>
                     <p class="text-lg mt-10">
                       To familiarize myself with Figma, a UI/UX design tool, I made custom playlist cover arts to reflect the mood
@@ -225,7 +286,7 @@
                   <!-- Left container -->
                   <div class="p-10 md:text-left">
                     <a href="https://www.figma.com/file/5NJoulTAhCrqaZjrRIw6ju/Song-control?node-id=0%3A1" target="_blank">
-                      <h1 class="text-fuchsia-700 hover:text-yellow-500 transition text-2xl font-bold">Music Mockup</h1>
+                      <h1 class="text-blue-700 hover:text-blue-400 transition text-2xl font-bold">Music Mockup</h1>
                     </a>
                     <p class="text-lg mt-10">
                       In this Figma project, I made a custom music player, inspired by Spotify, to play around with their prototyping tool.
@@ -243,13 +304,13 @@
             </div>
             <!-- End Projects -->
             <!--Work Experience-->
-            <h1 id="experience" class="text-3xl text-left text-fuchsia-700 font-bold pt-5 ml-10">Work Experience</h1>
+            <h1 id="experience" class="text-3xl text-left text-blue-700 font-bold pt-5 ml-10">Work Experience</h1>
             <!-- Allstate -->
             <div class="bg-white dark:bg-neutral-900 dark:text-white rounded-xl p-10 md:p-0 m-5 shadow-md">
               <div class="md:flex">
                 <!-- Left container -->
                 <div class="p-10 md:text-left grow">
-                  <h1 class="text-fuchsia-700 text-2xl font-bold">Allstate</h1>
+                  <h1 class="text-blue-700 text-2xl font-bold">Allstate</h1>
                   <p class="text-lg mt-10">
                     Building full stack programs using React, 
                     javascript/typescript (frontend) and Java, Spring boot, JUnit (backend)
@@ -279,7 +340,7 @@
               <div class="md:flex">
                 <!-- Left container -->
                 <div class="p-10 md:text-left grow">
-                  <h1 class="text-fuchsia-700 text-2xl font-bold">Apple</h1>
+                  <h1 class="text-blue-700 text-2xl font-bold">Apple</h1>
                   <p class="text-lg mt-10">
                     Highly skilled at uncovering customers' needs, 
                     then following through with enlightening solutions
@@ -303,7 +364,7 @@
               <div class="md:flex">
                 <!-- Left container -->
                 <div class="p-10 md:text-left grow">
-                  <h1 class="text-fuchsia-700 text-2xl font-bold">Postogon</h1>
+                  <h1 class="text-blue-700 text-2xl font-bold">Postogon</h1>
                   <p class="text-lg mt-10">
                     Follow agile methodology to develop and test new features
                   </p>
@@ -324,25 +385,25 @@
             <!-- End Work Experience -->
             <!--Footer-->
             <footer>
-              <h1 id="contacts" class="text-fuchsia-700 text-3xl text-left font-bold pt-5 ml-10">Contact</h1>
+              <h1 id="contacts" class="text-blue-700 text-3xl text-left font-bold pt-5 ml-10">Contact</h1>
               <div class="bg-white dark:bg-neutral-900 dark:text-white rounded-xl p-5 m-5 shadow-md">
                 <div class="p-4">
                   <div class="flex justify-center">
                     <a href="https://www.linkedin.com/in/oke-oghene-amuwha-1b1489203/" target="_blank">
-                      <div class="m-2 md:m-5 hover:text-yellow-500 transition">
-                        <img class="rounded-full mx-auto border border-black" src="images/LinkedIn.svg" alt="Linkedin" width="80">
+                      <div class="m-2 md:m-5 hover:text-blue-400 transition">
+                        <img class="rounded-full mx-auto border border-black" src="images/LinkedIn.svg" alt="Linkedin" width="60">
                         <p class="pt-2 text-md">LinkedIn</p>
                       </div>
                     </a>
                     <a href="mailto: amuwhao46@gmail.com">
-                      <div class="m-2 md:m-5 hover:text-yellow-500 transition">
-                        <img class="rounded-full mx-auto border border-black" src="images/Mail.svg" alt="Mail" width="80">
+                      <div class="m-2 md:m-5 hover:text-blue-400 transition">
+                        <img class="rounded-full mx-auto border border-black" src="images/Mail.svg" alt="Mail" width="60">
                         <p class="pt-2 text-md">Mail</p>
                       </div>
                     </a>
                     <a href="https://github.com/amuwhao46" target="_blank">
-                      <div class="m-2 md:m-5 hover:text-yellow-500 transition">
-                        <img class="rounded-full mx-auto border border-black" src="images/Github.svg" alt="Github" width="80">
+                      <div class="m-2 md:m-5 hover:text-blue-400 transition">
+                        <img class="rounded-full mx-auto border border-black" src="images/Github.svg" alt="Github" width="60">
                         <p class="pt-2 text-md">Github</p>
                       </div>
                     </a>
