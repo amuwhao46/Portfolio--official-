@@ -11,7 +11,7 @@
   </head>
   <!--Website by Oke-Oghene Amuwha-->
   <!--Body-->
-  <body class="bg-gray-200 dark:bg-black">
+  <body class="bg-gray-200 dark:bg-black bg-fixed bg-no-repeat bg-center bg-cover h-full" style="background-image: url(images/City.JPG)">
     <!--Header-->
     <header>
       <!--Navbar-->
@@ -47,376 +47,373 @@
       </nav>
       <!-- End Navbar -->
     </header>
-    <!--Wallpaper-->
-    <div class="bg-fixed bg-no-repeat bg-center bg-cover" style="background-image: url(images/City.JPG)">
-      <!--Dark mode button-->
-      <!-- <div class="flex justify-end items-center space-x-2">
-        <span class="text-sm text-gray-800">Light</span>
-        <div>
-          <input type="checkbox" name="" id="toggle" class="hidden" />
-          <label for="toggle">
-            <div class="w-9 h-5 flex items-center bg-gray-300 rounded-full p-1">
-              <div class="toggle-dot w-4 h-4 bg-white rounded-full shadow-md transform duration-200 ease-in-out"></div>
+    <!--Dark mode button-->
+    <!-- <div class="flex justify-end items-center space-x-2">
+      <span class="text-sm text-gray-800">Light</span>
+      <div>
+        <input type="checkbox" name="" id="toggle" class="hidden" />
+        <label for="toggle">
+          <div class="w-9 h-5 flex items-center bg-gray-300 rounded-full p-1">
+            <div class="toggle-dot w-4 h-4 bg-white rounded-full shadow-md transform duration-200 ease-in-out"></div>
+          </div>
+        </label>
+      </div>
+      <span class="text-sm text-gray-600">Dark</span>
+    </div> -->
+    <!--Main-->
+    <main class="pt-20">
+      <!--Cover-->
+      <img class="w-80 h-80 rounded-full mx-auto" src="images/Portrait.jpg" alt="Profile Picture" width="500">
+      <div class="mx-auto pb-20 text-white text-center">
+        <p class="text-5xl font-bold pt-5">Oke-Oghene Amuwha</p>
+        <p class="text-lg px-10 my-5">Now supports dark mode</p>
+        <img class="mx-auto" src="images/Logo.svg" alt="Logo" width="80"> <!--Logo-->
+      </div>
+      <!--Content-->
+      <div id="school" class="bg-gray-200 md:bg-gray-200/50 md:backdrop-blur-md dark:bg-black z-0 py-2 rounded-tl-lg rounded-tr-lg">
+        <div class="text-center">
+          <!--School-->
+          <div class="bg-white dark:bg-neutral-900 dark:text-white rounded-xl p-10 m-5 shadow-md">
+            <!--School img-->
+            <img class="w-60 h-60 rounded-full border-solid border border-black mx-auto shadow-lg" src="images/School.svg" alt="School glyph" width="300">
+            <h1 class="text-3xl font-bold pt-10">Wayne State University</h1>
+            <!--About Me-->
+            <p class="mb-5">Bachelor of Science in Computer Science</p>
+            <!--About me Tabs-->
+            <!--Links-->
+            <div class="tabs mb-10">
+              <button class="tablinks" onclick="aboutSec(event, 'About')" id="default">
+                <p class="hover:text-blue-400 transition text-3xl font-bold p-5">About</p>
+              </button>
+              <button class="tablinks" onclick="aboutSec(event, 'Interests')">
+                <p class="hover:text-blue-400 transition text-3xl font-bold p-5">Interests</p>
+              </button>
+              <button class="tablinks" onclick="aboutSec(event, 'Hobbies')">
+                <p class="hover:text-blue-400 transition text-3xl font-bold p-5">Hobbies</p>
+              </button>
             </div>
-          </label>
-        </div>
-        <span class="text-sm text-gray-600">Dark</span>
-      </div> -->
-      <!--Main-->
-      <main class="pt-20">
-        <!--Cover-->
-        <img class="w-80 h-80 rounded-full mx-auto" src="images/Portrait.jpg" alt="Profile Picture" width="500">
-        <div class="mx-auto pb-20 text-white text-center">
-          <p class="text-5xl font-bold pt-5">Oke-Oghene Amuwha</p>
-          <p class="text-lg px-10 my-5">Now supports dark mode</p>
-          <img class="mx-auto" src="images/Logo.svg" alt="Logo" width="80"> <!--Logo-->
-        </div>
-        <!--Content-->
-        <div id="school" class="bg-gray-100/50 backdrop-blur-md dark:bg-black z-0 py-2 rounded-tl-lg rounded-tr-lg">
-          <div class="text-center">
-            <!--School-->
-            <div class="bg-white dark:bg-neutral-900 dark:text-white rounded-xl p-10 m-5 shadow-md">
-              <!--School img-->
-              <img class="w-60 h-60 rounded-full border-solid border border-black mx-auto shadow-lg" src="images/School.svg" alt="School glyph" width="300">
-              <h1 class="text-3xl font-bold pt-10">Wayne State University</h1>
-              <!--About Me-->
-              <p class="mb-5">Bachelor of Science in Computer Science</p>
-              <!--About me Tabs-->
-              <!--Links-->
-              <div class="tabs mb-10">
-                <button class="tablinks" onclick="aboutSec(event, 'About')" id="default">
-                  <p class="hover:text-blue-400 transition text-3xl font-bold p-5">About</p>
-                </button>
-                <button class="tablinks" onclick="aboutSec(event, 'Interests')">
-                  <p class="hover:text-blue-400 transition text-3xl font-bold p-5">Interests</p>
-                </button>
-                <button class="tablinks" onclick="aboutSec(event, 'Hobbies')">
-                  <p class="hover:text-blue-400 transition text-3xl font-bold p-5">Hobbies</p>
-                </button>
-              </div>
-              <!--Content-->
-              <div id="About" class="tabcontent">
-                <p class="mb-20 md:px-10">Hello! My name is Oke Amuwha. I am currently a senior at Wayne State University pursuing 
-                  my bachelors in Computer Science. After I graduate I hope to work in software engineering, specifically in machine learning,
-                  full stack development or UI/UX design.
-                </p>
-              </div>
-              <div id="Interests" class="tabcontent">
-                <p class="mb-20 md:px-10">I've always had an interest in how and why stuff just seems to work.
-                  When I was younger I would always look up at the stars in amazement at whats out there. Constantly
-                  learning about deep space and the mysteries thats out there. 
-                  Nowawdays I'm more focused on the mind and it's interpretation of reality and the parallels it has with the technology
-                  we interface with. How is it that a certain vibration of particles makes the mind interpret it as music?
-                  Likewise, how does tapping a certain part of my phone display cause the flashlight to light up?
-                  I believe we will have, at the very least, the beginnings of an understanding of the hard problem of consciousness.
-                  I want to be a part of that discovery, either contributing my own observations and measurements or indirectly
-                  through my field of study. Either way it's amazing how interconnected a lot of things seem to be, even with this 
-                  delicate balance it all just works.
-                </p>
-              </div>
-              <div id="Hobbies" class="tabcontent">
-                <p class="mb-20 md:px-10">When I get an idea to do something, I start it immediately; The research, planning and developing
-                  Sometimes in the midst of that excitement I end up taking a lot longer to finish the project or focusing on something else
-                  something else that catches my interests. I also like watching educational youtubers like Veritasium or Vsauce
-                  The way they're able to explain advanced concepts in an interactive and relatable way reinforces my love for learning.
-                  I'm also pretty active, constantly working out my body and mind by going to the gym and reading.
-                </p>
-              </div>
+            <!--Content-->
+            <div id="About" class="tabcontent">
+              <p class="mb-20 md:px-10">Hello! My name is Oke Amuwha. I am currently a senior at Wayne State University pursuing 
+                my bachelors in Computer Science. After I graduate I hope to work in software engineering, specifically in machine learning,
+                full stack development or UI/UX design
+              </p>
             </div>
-            <!--Skills-->
-            <h1 id="skills" class="text-3xl text-left text-blue-700 font-bold pt-5 ml-10">Skills</h1>
-            <div class="bg-white text-black dark:bg-neutral-900 dark:text-white  rounded-xl p-10 m-5 shadow-md">
-              <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-                <!--HTML-->
-                <div>
-                  <img class="rounded-full border border-black mx-auto" src="images/HTML.svg" alt="HTML" width="80">
-                  <p class="pt-2 text-lg">HTML</p>
-                </div>
-                <!--Tailwind-->
-                <div>
-                  <img class="rounded-full border border-black mx-auto" src="images/Tailwind.svg" alt="Tailwind" width="80">
-                  <p class="pt-2 text-lg">Tailwindcss</p>
-                </div>
-                <!--Github-->
-                <div>
-                  <img class="rounded-full border border-black mx-auto" src="images/Github.svg" alt="Github" width="80">
-                  <p class="pt-2 text-lg">Github</p>
-                </div>
-                <!--Figma-->
-                <div>
-                  <img class="rounded-full border border-black mx-auto" src="images/Figma.svg" alt="Figma" width="80">
-                  <p class="pt-2 text-lg">Figma</p>
-                </div>
-                <!--Java-->
-                <div>
-                  <img class="rounded-full border border-black mx-auto" src="images/Java.svg" alt="Java" width="80">
-                  <p class="pt-2 text-lg">Java</p>
-                </div>
-                <!--C++-->
-                <div>
-                  <img class="rounded-full border border-black mx-auto" src="images/C++.svg" alt="C++" width="80">
-                  <p class="pt-2 text-lg">C++</p>
-                </div>
-                <!--Python-->
-                <div>
-                  <img class="rounded-full border border-black mx-auto" src="images/Python.svg" alt="Python" width="80">
-                  <p class="pt-2 text-lg">Python</p>
-                </div>
-                <!--React-->
-                <div>
-                  <img class="rounded-full border border-black mx-auto" src="images/React.svg" alt="React" width="80">
-                  <p class="pt-2 text-lg">React</p>
-                </div>
+            <div id="Interests" class="tabcontent">
+              <p class="mb-20 md:px-10">I've always had an interest in how and why stuff just seems to work.
+                When I was younger I would always look up at the stars in amazement at whats out there. Constantly
+                learning about deep space and the mysteries thats out there. 
+                Nowawdays I'm more focused on the mind and it's interpretation of reality and the parallels it has with the technology
+                we interface with. How is it that a certain vibration of particles makes the mind interpret it as music?
+                Likewise, how does tapping a certain part of my phone display cause the flashlight to light up?
+                I believe we will have, at the very least, the beginnings of an understanding of the hard problem of consciousness.
+                I want to be a part of that discovery, either contributing my own observations and measurements or indirectly
+                through my field of study. Either way it's amazing how interconnected a lot of things seem to be, even with this 
+                delicate balance it all just works
+              </p>
+            </div>
+            <div id="Hobbies" class="tabcontent">
+              <p class="mb-20 md:px-10">When I get an idea to do something, I start it immediately; The research, planning and developing
+                Sometimes in the midst of that excitement I end up taking a lot longer to finish the project or focusing on something else
+                something else that catches my interests. I also like watching educational youtubers like Veritasium or Vsauce
+                The way they're able to explain advanced concepts in an interactive and relatable way reinforces my love for learning.
+                I'm also pretty active, constantly working out my body and mind by going to the gym and reading
+              </p>
+            </div>
+          </div>
+          <!--Skills-->
+          <h1 id="skills" class="text-3xl text-left text-blue-700 font-bold pt-5 ml-10">Skills</h1>
+          <div class="bg-white text-black dark:bg-neutral-900 dark:text-white  rounded-xl p-10 m-5 shadow-md">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+              <!--HTML-->
+              <div>
+                <img class="rounded-full border border-black mx-auto" src="images/HTML.svg" alt="HTML" width="80">
+                <p class="pt-2 text-lg">HTML</p>
+              </div>
+              <!--Tailwind-->
+              <div>
+                <img class="rounded-full border border-black mx-auto" src="images/Tailwind.svg" alt="Tailwind" width="80">
+                <p class="pt-2 text-lg">Tailwindcss</p>
+              </div>
+              <!--Github-->
+              <div>
+                <img class="rounded-full border border-black mx-auto" src="images/Github.svg" alt="Github" width="80">
+                <p class="pt-2 text-lg">Github</p>
+              </div>
+              <!--Figma-->
+              <div>
+                <img class="rounded-full border border-black mx-auto" src="images/Figma.svg" alt="Figma" width="80">
+                <p class="pt-2 text-lg">Figma</p>
+              </div>
+              <!--Java-->
+              <div>
+                <img class="rounded-full border border-black mx-auto" src="images/Java.svg" alt="Java" width="80">
+                <p class="pt-2 text-lg">Java</p>
+              </div>
+              <!--C++-->
+              <div>
+                <img class="rounded-full border border-black mx-auto" src="images/C++.svg" alt="C++" width="80">
+                <p class="pt-2 text-lg">C++</p>
+              </div>
+              <!--Python-->
+              <div>
+                <img class="rounded-full border border-black mx-auto" src="images/Python.svg" alt="Python" width="80">
+                <p class="pt-2 text-lg">Python</p>
+              </div>
+              <!--React-->
+              <div>
+                <img class="rounded-full border border-black mx-auto" src="images/React.svg" alt="React" width="80">
+                <p class="pt-2 text-lg">React</p>
               </div>
             </div>
-            <!--Projects-->
-            <h1 id="projects" class="text-blue-700 text-3xl text-left font-bold pt-5 ml-10">Projects</h1>
-            <!-- Live Waveform -->
+          </div>
+          <!--Projects-->
+          <h1 id="projects" class="text-blue-700 text-3xl text-left font-bold pt-5 ml-10">Projects</h1>
+          <!-- Live Waveform -->
+          <div class="bg-white dark:bg-neutral-900 dark:text-white rounded-xl p-10 md:p-0 m-5 shadow-md">
+            <div class="md:flex">
+              <!-- Left container -->
+              <div class="p-10 md:text-left">
+                <a href="https://github.com/amuwhao46/nowplaying" target="_blank">
+                  <h1 class="text-blue-700 hover:text-blue-400 transition text-2xl font-bold">Live Waveform</h1>
+                </a>
+                <p class="text-lg mt-10">
+                  Trying to implement Spotify's API to show a live waveform of the current song being played.
+                  The webpage dynamically switches the album cover, Song name, and artist name. The background and the "light shapes"
+                  also move with the beat of the current song
+                </p>
+                <p class="text-lg mt-2">
+                  This project uses react and Spotify's to work. It is still a work in progress because I'm currently teaching myself react and API 
+                  requests and responses
+                </p>
+              </div>
+              <!-- Right container -->
+              <div class="md:m-5">
+                <img class="mx-auto rounded-lg" src="images/LiveWaveform.png" alt="Mockup of future project using Spotify" width="450">
+              </div>
+            </div>
+          </div>
+          <!-- End Live Waveform -->
+          <!-- Display side by side -->
+          <div class="md:flex">
+            <!-- Website Portfolio -->
             <div class="bg-white dark:bg-neutral-900 dark:text-white rounded-xl p-10 md:p-0 m-5 shadow-md">
-              <div class="md:flex">
+              <div>
                 <!-- Left container -->
                 <div class="p-10 md:text-left">
-                  <a href="https://github.com/amuwhao46/nowplaying" target="_blank">
-                    <h1 class="text-blue-700 hover:text-blue-400 transition text-2xl font-bold">Live Waveform</h1>
-                  </a>
+                  <h1 class="text-blue-700 text-2xl font-bold">Website</h1>
                   <p class="text-lg mt-10">
-                    Trying to implement Spotify's API to show a live waveform of the current song being played.
-                    The webpage dynamically switches the album cover, Song name, and artist name. The background and the "light shapes"
-                    also move with the beat of the current song
+                    I made this Website using HTML, Javascript and TailwindCSS. Over the course of my journey creating
+                    this website I've learned how to utilize Tailwind to style my webpage with a utility-first approach
                   </p>
                   <p class="text-lg mt-2">
-                    This project uses react and Spotify's to work. It is still a work in progress because I'm currently teaching myself react and API 
-                    requests and responses
+                    Over the past several months I've went through multiple designs as I've learned to create a responsive
+                    webpage that looks great on both desktop and mobile screens. Especially making use of blur effects and flex boxes
+                    to make the website look clean and modern
+                  </p>
+                  <p class="text-lg mt-2">
+                    I used prior knowledge and help from friends to learn how to launch a production ready webpage that loads fast and 
+                    stays up to date with the latest changes I make. 
+                    Github has the latest changes I've made before releasing them into production
                   </p>
                 </div>
                 <!-- Right container -->
                 <div class="md:m-5">
-                  <img class="mx-auto rounded-lg" src="images/LiveWaveform.png" alt="Mockup of future project using Spotify" width="450">
+                  <img class="mx-auto rounded-lg" src="images/Website.jpeg" alt="Mockup of future project using Spotify" width="600">
                 </div>
               </div>
             </div>
-            <!-- End Live Waveform -->
-            <!-- Display side by side -->
-            <div class="md:flex">
-              <!-- Website Portfolio -->
-              <div class="bg-white dark:bg-neutral-900 dark:text-white rounded-xl p-10 md:p-0 m-5 shadow-md">
-                <div>
-                  <!-- Left container -->
-                  <div class="p-10 md:text-left">
-                    <h1 class="text-blue-700 text-2xl font-bold">Website</h1>
-                    <p class="text-lg mt-10">
-                      I made this Website using HTML, Javascript and TailwindCSS. Over the course of my journey creating
-                      this website I've learned how to utilize Tailwind to style my webpage with a utility-first approach
-                    </p>
-                    <p class="text-lg mt-2">
-                      Over the past several months I've went through multiple designs as I've learned to create a responsive
-                      webpage that looks great on both desktop and mobile screens. Especially making use of blur effects and flex boxes
-                      to make the website look clean and modern
-                    </p>
-                    <p class="text-lg mt-2">
-                      I used prior knowledge and help from friends to learn how to launch a production ready webpage that loads fast and 
-                      stays up to date with the latest changes I make. 
-                      Github has the latest changes I've made before releasing them into production
-                    </p>
-                  </div>
-                  <!-- Right container -->
-                  <div class="md:m-5">
-                    <img class="mx-auto rounded-lg" src="images/Website.jpeg" alt="Mockup of future project using Spotify" width="600">
-                  </div>
-                </div>
-              </div>
-              <!-- End Website Portfolio -->
-              <!-- NFT Project -->
-              <div class="bg-white dark:bg-neutral-900 dark:text-white rounded-xl p-10 md:p-0 m-5 shadow-md">
-                <div>
-                  <!-- Left container -->
-                  <div class="p-10 md:text-left">
-                    <a href="https://github.com/amuwhao46/Databases/tree/oke" target="_blank">
-                      <h1 class="text-blue-700 hover:text-blue-400 transition text-2xl font-bold">NFT Project</h1>
-                    </a>
-                    <p class="text-lg mt-10">
-                      This is a school project I've been working on for my database class. In this project we make an NFT website
-                      that allows users to mint, transfer, or list an NFT. Every new account, NFT, transfer, and listing is recorded
-                      in seperate tables in a database.
-                    </p>
-                    <p class="text-lg mt-2">
-                      Java is used in the backend to initialize the database and perform SQL commands to insert, update, create amd delete rows
-                      or columns of information. In the front end we utilize .jsp files that allow us to include html and javascript to dynamically
-                      update with new information.
-                    </p>
-                    <p class="text-lg mt-2">
-                      As of the time this is written, the project is still on going but, I hope to be able to show a working version of it soon.
-                      This project was also made in collaberation through github with another partner.
-                    </p>
-                  </div>
-                  <!-- Right container -->
-                  <div class="md:m-5">
-                    <img class="mx-auto rounded-lg" src="images/Database.png" alt="Spotify mock design from Figma" width="600">
-                  </div>
-                </div>
-              </div>
-              <!-- End NFT Project -->
-            </div>
-            <!-- Display side by side -->
-            <div class="md:flex">
-              <!-- Playlist Covers -->
-              <div class="bg-white dark:bg-neutral-900 dark:text-white rounded-xl p-10 md:p-0  m-5 shadow-md">
-                <div>
-                  <!-- Left container -->
-                  <div class="p-10 md:text-left">
-                    <a href="https://www.figma.com/file/wbxXLggR5uTiDMxChygNsr/Playlist-Cover?node-id=0%3A1" target="_blank">
-                      <h1 class="text-blue-700 hover:text-blue-400 transition text-2xl font-bold">Playlist Covers</h1>
-                    </a>
-                    <p class="text-lg mt-10">
-                      To familiarize myself with Figma, a UI/UX design tool, I made custom playlist cover arts to reflect the mood
-                      the songs in each playlist conveys. I played around with different techniques and styles to see how far I could take Figma's 
-                      tools
-                    </p>
-                  </div>
-                  <!-- Right container -->
-                  <div class="md:m-5">
-                    <img class="mx-auto rounded-lg" src="images/PlaylistCover.png" alt="Playlist designs from figma" width="400">
-                  </div>
-                </div>
-              </div>
-              <!-- End Playlist Covers -->
-              <!-- Music Mockup -->
-              <div class="bg-white dark:bg-neutral-900 dark:text-white rounded-xl p-10 md:p-0 m-5 shadow-md">
-                <div>
-                  <!-- Left container -->
-                  <div class="p-10 md:text-left">
-                    <a href="https://www.figma.com/file/5NJoulTAhCrqaZjrRIw6ju/Song-control?node-id=0%3A1" target="_blank">
-                      <h1 class="text-blue-700 hover:text-blue-400 transition text-2xl font-bold">Music Mockup</h1>
-                    </a>
-                    <p class="text-lg mt-10">
-                      In this Figma project, I made a custom music player, inspired by Spotify, to play around with their prototyping tool.
-                      The prototyping tool allows for dynamic designs, letting you see how the different elements interact with each other. 
-                      Currently I haven't thought of implementing this into a usable product                   
-                    </p>
-                  </div>
-                  <!-- Right container -->
-                  <div class="md:m-5">
-                    <img class="mx-auto rounded-lg" src="images/SpotifyMock.png" alt="Spotify mock design from Figma" width="700">
-                  </div>
-                </div>
-              </div>
-              <!-- End Spotify Mockup -->
-            </div>
-            <!-- End Projects -->
-            <!--Work Experience-->
-            <h1 id="experience" class="text-3xl text-left text-blue-700 font-bold pt-5 ml-10">Work Experience</h1>
-            <!-- Allstate -->
+            <!-- End Website Portfolio -->
+            <!-- NFT Project -->
             <div class="bg-white dark:bg-neutral-900 dark:text-white rounded-xl p-10 md:p-0 m-5 shadow-md">
-              <div class="md:flex">
+              <div>
                 <!-- Left container -->
-                <div class="p-10 md:text-left grow">
-                  <h1 class="text-blue-700 text-2xl font-bold">Allstate</h1>
+                <div class="p-10 md:text-left">
+                  <a href="https://github.com/amuwhao46/Databases/tree/oke" target="_blank">
+                    <h1 class="text-blue-700 hover:text-blue-400 transition text-2xl font-bold">NFT Project</h1>
+                  </a>
                   <p class="text-lg mt-10">
-                    Building full stack programs using React, 
-                    javascript/typescript (frontend) and Java, Spring boot, JUnit (backend)
-                  </p>
-                  <p class="text-lg mt-2 md:mt-5">
-                    Partook in the launch of a new customer facing product launch that has been in development for over a year
-                  </p>
-                  <p class="text-lg mt-2 md:mt-5">
-                    Helped start up another internal product with other interns with the assistance of senior developers
-                  </p>
-                  <p class="text-lg mt-2 md:mt-5">
-                    Paired programming and test driven development
-                  </p>
-                  <p class="text-lg mt-2 md:mt-5">
-                    Utilized terminal to perform git commands
-                  </p>
-                </div>
-                <!-- Right container -->
-                <div class="md:p-10">
-                  <img class="mx-auto" src="images/Allstate.svg" alt="Image of the Allstate logo" width="250">
-                </div>
-              </div>
-            </div>
-            <!-- End Allstate -->
-            <!-- Apple -->
-            <div class="bg-white dark:bg-neutral-900 dark:text-white rounded-xl p-10 md:p-0 m-5 shadow-md">
-              <div class="md:flex">
-                <!-- Left container -->
-                <div class="p-10 md:text-left grow">
-                  <h1 class="text-blue-700 text-2xl font-bold">Apple</h1>
-                  <p class="text-lg mt-10">
-                    Highly skilled at uncovering customers' needs, 
-                    then following through with enlightening solutions
-                  </p>
-                  <p class="text-lg mt-2 md:mt-5">
-                    Maintaining visual merchandising and assisting team members
+                    This is a school project I've been working on for my database class. In this project we make an NFT website
+                    that allows users to mint, transfer, or list an NFT. Every new account, NFT, transfer, and listing is recorded
+                    in seperate tables in a database
                   </p>
                   <p class="text-lg mt-2">
-                    Ready to apply my learning in customer interactions
+                    Java is used in the backend to initialize the database and perform SQL commands to insert, update, create amd delete rows
+                    or columns of information. In the front end we utilize .jsp files that allow us to include html and javascript to dynamically
+                    update with new information
+                  </p>
+                  <p class="text-lg mt-2">
+                    As of the time this is written, the project is still on going but, I hope to be able to show a working version of it soon.
+                    This project was also made in collaberation through github with another partner
                   </p>
                 </div>
                 <!-- Right container -->
-                <div class="md:p-10 md:mt-5">
-                  <img class="mx-auto" src="images/Apple.svg" alt="Image of the Apple logo" width="250">
+                <div class="md:m-5">
+                  <img class="mx-auto rounded-lg" src="images/Database.png" alt="Spotify mock design from Figma" width="600">
                 </div>
               </div>
             </div>
-            <!-- End Apple -->
-            <!-- Postogon -->
-            <div class="bg-white dark:bg-neutral-900 dark:text-white rounded-xl p-10 md:p-0 m-5 shadow-md">
-              <div class="md:flex">
-                <!-- Left container -->
-                <div class="p-10 md:text-left grow">
-                  <h1 class="text-blue-700 text-2xl font-bold">Postogon</h1>
-                  <p class="text-lg mt-10">
-                    Follow agile methodology to develop and test new features
-                  </p>
-                  <p class="text-lg mt-2 md:mt-5">
-                    Utilize Figma to storyboard visualizations for front end development
-                  </p>
-                  <p class="text-lg mt-2 md:mt-5">
-                    Create documentation to streamline development
-                  </p>
-                </div>
-                <!-- Right container -->
-                <div class="md:p-10">
-                  <img class="mx-auto" src="images/Postogon.svg" alt="Image of the Postogon Logo" width="250">
-                </div>
-              </div>
-            </div>
-            <!-- End Postogon -->
-            <!-- End Work Experience -->
-            <!--Footer-->
-            <footer>
-              <h1 id="contacts" class="text-blue-700 text-3xl text-left font-bold pt-5 ml-10">Contact</h1>
-              <div class="bg-white dark:bg-neutral-900 dark:text-white rounded-xl p-5 m-5 shadow-md">
-                <div class="p-4">
-                  <div class="flex justify-center">
-                    <a href="https://www.linkedin.com/in/oke-oghene-amuwha-1b1489203/" target="_blank">
-                      <div class="m-2 md:m-5 hover:text-blue-400 transition">
-                        <img class="rounded-full mx-auto border border-black" src="images/LinkedIn.svg" alt="Linkedin" width="60">
-                        <p class="pt-2 text-md">LinkedIn</p>
-                      </div>
-                    </a>
-                    <a href="mailto: amuwhao46@gmail.com">
-                      <div class="m-2 md:m-5 hover:text-blue-400 transition">
-                        <img class="rounded-full mx-auto border border-black" src="images/Mail.svg" alt="Mail" width="60">
-                        <p class="pt-2 text-md">Mail</p>
-                      </div>
-                    </a>
-                    <a href="https://github.com/amuwhao46" target="_blank">
-                      <div class="m-2 md:m-5 hover:text-blue-400 transition">
-                        <img class="rounded-full mx-auto border border-black" src="images/Github.svg" alt="Github" width="60">
-                        <p class="pt-2 text-md">Github</p>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <p>Oke Amuwha | &copy 2022</p>
-              </div>
-            </footer>
-            <!-- End footer -->
+            <!-- End NFT Project -->
           </div>
+          <!-- Display side by side -->
+          <div class="md:flex">
+            <!-- Playlist Covers -->
+            <div class="bg-white dark:bg-neutral-900 dark:text-white rounded-xl p-10 md:p-0  m-5 shadow-md">
+              <div>
+                <!-- Left container -->
+                <div class="p-10 md:text-left">
+                  <a href="https://www.figma.com/file/wbxXLggR5uTiDMxChygNsr/Playlist-Cover?node-id=0%3A1" target="_blank">
+                    <h1 class="text-blue-700 hover:text-blue-400 transition text-2xl font-bold">Playlist Covers</h1>
+                  </a>
+                  <p class="text-lg mt-10">
+                    To familiarize myself with Figma, a UI/UX design tool, I made custom playlist cover arts to reflect the mood
+                    the songs in each playlist conveys. I played around with different techniques and styles to see how far I could take Figma's 
+                    tools
+                  </p>
+                </div>
+                <!-- Right container -->
+                <div class="md:m-5">
+                  <img class="mx-auto rounded-lg" src="images/PlaylistCover.png" alt="Playlist designs from figma" width="400">
+                </div>
+              </div>
+            </div>
+            <!-- End Playlist Covers -->
+            <!-- Music Mockup -->
+            <div class="bg-white dark:bg-neutral-900 dark:text-white rounded-xl p-10 md:p-0 m-5 shadow-md">
+              <div>
+                <!-- Left container -->
+                <div class="p-10 md:text-left">
+                  <a href="https://www.figma.com/file/5NJoulTAhCrqaZjrRIw6ju/Song-control?node-id=0%3A1" target="_blank">
+                    <h1 class="text-blue-700 hover:text-blue-400 transition text-2xl font-bold">Music Mockup</h1>
+                  </a>
+                  <p class="text-lg mt-10">
+                    In this Figma project, I made a custom music player, inspired by Spotify, to play around with their prototyping tool.
+                    The prototyping tool allows for dynamic designs, letting you see how the different elements interact with each other. 
+                    Currently I haven't thought of implementing this into a usable product                   
+                  </p>
+                </div>
+                <!-- Right container -->
+                <div class="md:m-5">
+                  <img class="mx-auto rounded-lg" src="images/SpotifyMock.png" alt="Spotify mock design from Figma" width="700">
+                </div>
+              </div>
+            </div>
+            <!-- End Spotify Mockup -->
+          </div>
+          <!-- End Projects -->
+          <!--Work Experience-->
+          <h1 id="experience" class="text-3xl text-left text-blue-700 font-bold pt-5 ml-10">Work Experience</h1>
+          <!-- Allstate -->
+          <div class="bg-white dark:bg-neutral-900 dark:text-white rounded-xl p-10 md:p-0 m-5 shadow-md">
+            <div class="md:flex">
+              <!-- Left container -->
+              <div class="p-10 md:text-left grow">
+                <h1 class="text-blue-700 text-2xl font-bold">Allstate</h1>
+                <p class="text-lg mt-10">
+                  Building full stack programs using React, 
+                  javascript/typescript (frontend) and Java, Spring boot, JUnit (backend)
+                </p>
+                <p class="text-lg mt-2 md:mt-5">
+                  Partook in the launch of a new customer facing product launch that has been in development for over a year
+                </p>
+                <p class="text-lg mt-2 md:mt-5">
+                  Helped start up another internal product with other interns with the assistance of senior developers
+                </p>
+                <p class="text-lg mt-2 md:mt-5">
+                  Paired programming and test driven development
+                </p>
+                <p class="text-lg mt-2 md:mt-5">
+                  Utilized terminal to perform git commands
+                </p>
+              </div>
+              <!-- Right container -->
+              <div class="md:p-10">
+                <img class="mx-auto" src="images/Allstate.svg" alt="Image of the Allstate logo" width="250">
+              </div>
+            </div>
+          </div>
+          <!-- End Allstate -->
+          <!-- Apple -->
+          <div class="bg-white dark:bg-neutral-900 dark:text-white rounded-xl p-10 md:p-0 m-5 shadow-md">
+            <div class="md:flex">
+              <!-- Left container -->
+              <div class="p-10 md:text-left grow">
+                <h1 class="text-blue-700 text-2xl font-bold">Apple</h1>
+                <p class="text-lg mt-10">
+                  Highly skilled at uncovering customers' needs, 
+                  then following through with enlightening solutions
+                </p>
+                <p class="text-lg mt-2 md:mt-5">
+                  Maintaining visual merchandising and assisting team members
+                </p>
+                <p class="text-lg mt-2">
+                  Ready to apply my learning in customer interactions
+                </p>
+              </div>
+              <!-- Right container -->
+              <div class="md:p-10 md:mt-5">
+                <img class="mx-auto" src="images/Apple.svg" alt="Image of the Apple logo" width="250">
+              </div>
+            </div>
+          </div>
+          <!-- End Apple -->
+          <!-- Postogon -->
+          <div class="bg-white dark:bg-neutral-900 dark:text-white rounded-xl p-10 md:p-0 m-5 shadow-md">
+            <div class="md:flex">
+              <!-- Left container -->
+              <div class="p-10 md:text-left grow">
+                <h1 class="text-blue-700 text-2xl font-bold">Postogon</h1>
+                <p class="text-lg mt-10">
+                  Follow agile methodology to develop and test new features
+                </p>
+                <p class="text-lg mt-2 md:mt-5">
+                  Utilize Figma to storyboard visualizations for front end development
+                </p>
+                <p class="text-lg mt-2 md:mt-5">
+                  Create documentation to streamline development
+                </p>
+              </div>
+              <!-- Right container -->
+              <div class="md:p-10">
+                <img class="mx-auto" src="images/Postogon.svg" alt="Image of the Postogon Logo" width="250">
+              </div>
+            </div>
+          </div>
+          <!-- End Postogon -->
+          <!-- End Work Experience -->
+          <!--Footer-->
+          <footer>
+            <h1 id="contacts" class="text-blue-700 text-3xl text-left font-bold pt-5 ml-10">Contact</h1>
+            <div class="bg-white dark:bg-neutral-900 dark:text-white rounded-xl p-5 m-5 shadow-md">
+              <div class="p-4">
+                <div class="flex justify-center">
+                  <a href="https://www.linkedin.com/in/oke-oghene-amuwha-1b1489203/" target="_blank">
+                    <div class="m-2 md:m-5 hover:text-blue-400 transition">
+                      <img class="rounded-full mx-auto border border-black" src="images/LinkedIn.svg" alt="Linkedin" width="60">
+                      <p class="pt-2 text-md">LinkedIn</p>
+                    </div>
+                  </a>
+                  <a href="mailto: amuwhao46@gmail.com">
+                    <div class="m-2 md:m-5 hover:text-blue-400 transition">
+                      <img class="rounded-full mx-auto border border-black" src="images/Mail.svg" alt="Mail" width="60">
+                      <p class="pt-2 text-md">Mail</p>
+                    </div>
+                  </a>
+                  <a href="https://github.com/amuwhao46" target="_blank">
+                    <div class="m-2 md:m-5 hover:text-blue-400 transition">
+                      <img class="rounded-full mx-auto border border-black" src="images/Github.svg" alt="Github" width="60">
+                      <p class="pt-2 text-md">Github</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <p>Oke Amuwha | &copy 2022</p>
+            </div>
+          </footer>
+          <!-- End footer -->
         </div>
-      </main>
-    </div>
+      </div>
+    </main>
     <!--Javascript Navbar-->
     <script>
       /*Show navbar on scroll*/
