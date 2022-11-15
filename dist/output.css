@@ -594,14 +594,6 @@ video {
   right: 0px;
 }
 
-.top-0 {
-  top: 0px;
-}
-
-.left-0 {
-  left: 0px;
-}
-
 .z-20 {
   z-index: 20;
 }
@@ -688,10 +680,6 @@ video {
   display: none;
 }
 
-.h-full {
-  height: 100%;
-}
-
 .h-8 {
   height: 2rem;
 }
@@ -716,16 +704,16 @@ video {
   height: 15rem;
 }
 
-.w-full {
-  width: 100%;
-}
-
 .w-8 {
   width: 2rem;
 }
 
 .w-3 {
   width: 0.75rem;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .w-9 {
@@ -1077,10 +1065,6 @@ nav {
 
 .tabs button.active {
   color: rgb(29, 78, 216);
-}
-
-.safari {
-  background-size: 1920px 1080px;
 }
 
 /* For dark mode button */
