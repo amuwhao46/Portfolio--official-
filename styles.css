@@ -11,6 +11,11 @@ nav {
 .tabs button.active {
     color: rgb(29, 78, 216);
 }
+
+.safari {
+    -webkit-background-size: 1920px 1080px;
+    background-size: 1920px 1080px;
+}
 /* For dark mode button */
 /* #toggle:checked ~ label div.toggle-dot {
     @apply translate-x-3;
