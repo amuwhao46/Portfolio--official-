@@ -708,6 +708,10 @@ video {
   height: 15rem;
 }
 
+.min-h-full {
+  min-height: 100%;
+}
+
 .w-8 {
   width: 2rem;
 }
